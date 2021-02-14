@@ -7,7 +7,7 @@ uses
   Interfaces,
   RaApplication,
   RaApplicationExe,
-  RaConfig, Unit1;
+  RaConfig;
 
 begin
   WriteLn('http://localhost:8080/ - open in browser');
@@ -15,6 +15,5 @@ begin
   Application.Config.Port := 8080;
   Application.Config.WwwDiskDirectory := 'C:\Raudus\www';
   Application.Config.SchedulerMode := rsmRunInSuperThread;
-  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
