@@ -224,7 +224,6 @@ begin
   aFrame.Name := aFrame.Name + IntToStr(FFrameCount);
   (aFrame).Visible := False;
 
-
   if FTipo <> 0 then
   begin
     tbs := TRaTabSheet.Create(FTabControl);

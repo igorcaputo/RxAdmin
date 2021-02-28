@@ -1,20 +1,21 @@
 object frmLogin: TfrmLogin
-  Left = 397
+  Left = 522
   Height = 282
-  Top = 145
+  Top = 235
   Width = 434
   BorderStyle = bsNone
   Caption = 'Login de acesso.'
   ClientHeight = 282
   ClientWidth = 434
+  OnActivate = FormActivate
   Position = poScreenCenter
   LCLVersion = '2.0.2.0'
-  object pnlLogin: TRaPanel
+  object Login_cfg: TRaPanel
     Left = 0
     Height = 282
     Top = 0
     Width = 434
-    OnAjaxRequest = pnlLoginAjaxRequest
+    OnAjaxRequest = Login_cfgAjaxRequest
     Align = alClient
     BevelInner = bvLowered
     ClientWidth = 434

@@ -13,7 +13,7 @@ type
   { TfrmMeuLayout }
 
   TfrmMeuLayout = class(TFrameDefault)
-    btnAcessar: TRaBitButton;
+    btnAcessar1: TRaButton;
     btnAreaTrabalho: TRaButton;
     btnAreaTrabalho_cfg: TRaPanel;
     btnListaCliente2: TRaButton;

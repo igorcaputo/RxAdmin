@@ -7,7 +7,7 @@ interface
 uses
   SysUtils, LResources, RaBase, RaControlsVCL,
   RaApplication,Forms,
-  Classes, objOperador;
+  Classes, objUsuario;
 
 type
 
@@ -27,8 +27,9 @@ type
     RaIntervalTimer1: TRaIntervalTimer;
     lblNome: TRaLabel;
     RaPanel1: TRaPanel;
-    pnlLogin: TRaPanel;
-    procedure pnlLoginAjaxRequest(Sender: TComponent; EventName: string;
+    Login_cfg: TRaPanel;
+    procedure FormActivate(Sender: TObject);
+    procedure Login_cfgAjaxRequest(Sender: TComponent; EventName: string;
       Params: TRaStrings);
     procedure btnAcessarClick(Sender: TObject);
     procedure showPrincipal;
@@ -50,38 +51,38 @@ uses untprincipal, objDynamicForm, dbutils, Utils, libBusca;
 
 procedure TfrmLogin.btnAcessarClick(Sender: TObject);
 var
-  Operador: TOperador;
-  OperadorOpf: TOperadorOpf;
-  OperadorEntity: TOperadorOpf.TEntities;
+  Usuario: TUsuario;
+  UsuarioOpf: TUsuarioOpf;
+  UsuarioEntity: TUsuarioOpf.TEntities;
 
 begin
 
   if (edtUsuario.Text <> '') and (edtSenha.Text <> '') then
-    if BuscaCampo('select USO_ACESSOAD from USOARIO_USO where upper(USO_LOGIN)=',
+    if BuscaCampo('select USO_ACESSOAD from USUARIO_USO where upper(USO_LOGIN)=',
       UpperCase(edtUsuario.Text), 'USO_ACESSOAD') = '0' then
     begin
       try
-        Operador := TOperador.Create;
-        OperadorOpf := TOperadorOpf.Create;
-        OperadorEntity := TOperadorOpf.TEntities.Create;
+        Usuario := TUsuario.Create;
+        UsuarioOpf := TUsuarioOpf.Create;
+        UsuarioEntity := TUsuarioOpf.TEntities.Create;
 
-        OperadorOpf.Entity.Nome := UpperCase(edtUsuario.Text);
-        OperadorOpf.Entity.Senha := edtSenha.Text;
-        OperadorOpf.Find(OperadorEntity, 'upper(USO_login) =:nome and USO_senha =:senha');
+        UsuarioOpf.Entity.Nome := UpperCase(edtUsuario.Text);
+        UsuarioOpf.Entity.Senha := edtSenha.Text;
+        UsuarioOpf.Find(UsuarioEntity, 'upper(USO_login) =:nome and USO_senha =:senha');
 
-        for Operador in OperadorEntity do
-          WriteLn(Operador.Id);
+        for Usuario in UsuarioEntity do
+          WriteLn(Usuario.Id);
 
-        if ((UpperCase(Operador.LoginAD) = UpperCase(edtUsuario.Text)) and
-          (Operador.Senha = edtSenha.Text)) then
+        if ((UpperCase(Usuario.LoginAD) = UpperCase(edtUsuario.Text)) and
+          (Usuario.Senha = edtSenha.Text)) then
           begin
           showPrincipal;
           end
         else
           lblAviso.Caption := 'Usuário ou senha inválidos!';
       finally
-        FreeAndNil(Operador);
-        FreeAndNil(OperadorOpf);
+        FreeAndNil(Usuario);
+        FreeAndNil(UsuarioOpf);
       end;
 
     end
@@ -92,7 +93,7 @@ begin
       lblAviso.Caption := 'Usuário ou senha inválidos!';
 end;
 
-procedure TfrmLogin.pnlLoginAjaxRequest(Sender: TComponent; EventName: string;
+procedure TfrmLogin.Login_cfgAjaxRequest(Sender: TComponent; EventName: string;
   Params: TRaStrings);
 begin
   FDbMapping := 'id:id,';
@@ -103,6 +104,15 @@ begin
   FDbMapping := FDbMapping + 'CadastradoPor:USO_NMCADASTRO,';
   FDbMapping := FDbMapping + 'Senha:USO_SENHA,';
   FDbMapping := FDbMapping + 'AcessoAD:USO_ACESSOAD';
+end;
+
+procedure TfrmLogin.FormActivate(Sender: TObject);
+var
+  FConfig: TDynamicForm;
+begin
+  FConfig := TDynamicForm.Create;
+  FConfig.LoadSetting(Self);
+  FConfig.Free;
 end;
 
 procedure TfrmLogin.showPrincipal;
