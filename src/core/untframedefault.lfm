@@ -1,0 +1,53 @@
+object FrameDefault: TFrameDefault
+  Left = 0
+  Height = 265
+  Top = 0
+  Width = 435
+  Align = alClient
+  ClientHeight = 265
+  ClientWidth = 435
+  TabOrder = 0
+  DesignLeft = 478
+  DesignTop = 300
+  object pnlTopo: TRaPanel
+    Left = 0
+    Height = 33
+    Top = 0
+    Width = 435
+    Align = alTop
+    BevelInner = bvLowered
+    BorderStyle = bsSingle
+    ClientWidth = 435
+    ClientHeight = 33
+    Color = clBtnFace
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Century Gothic'
+    ParentFont = False
+    TabOrder = 0
+    UI = 'redmond'
+    object btnFechar: TRaBitButton
+      Left = 404
+      Height = 21
+      Top = 6
+      Width = 25
+      Anchors = [akTop, akRight, akBottom]
+      Caption = 'X'
+      Font.Color = clCaptionText
+      Font.Height = -13
+      Font.Name = 'Century Gothic'
+      ParentFont = False
+      TabOrder = 0
+      UI = 'simple'
+    end
+  end
+  object Container: TRaPanel
+    Left = 0
+    Height = 232
+    Top = 33
+    Width = 435
+    Align = alClient
+    Color = 15658734
+    TabOrder = 1
+  end
+end

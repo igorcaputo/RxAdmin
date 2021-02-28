@@ -8,27 +8,28 @@
       <Unit0>
         <Filename Value="RxAdmin.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="28" Y="9"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="2"/>
+        <CursorPos X="26" Y="18"/>
         <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="core\untlogin.pas"/>
+        <Filename Value="src\core\untlogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmLogin"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untLogin"/>
-        <TopLine Value="119"/>
-        <CursorPos Y="81"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="117"/>
+        <CursorPos X="49" Y="127"/>
         <UsageCount Value="26"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="core\uformdefault.pas"/>
+        <Filename Value="src\core\uformdefault.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormDefault"/>
         <HasResources Value="True"/>
@@ -40,7 +41,7 @@
         <UsageCount Value="25"/>
       </Unit2>
       <Unit3>
-        <Filename Value="core\untframedefault.pas"/>
+        <Filename Value="src\core\untframedefault.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrameDefault"/>
         <HasResources Value="True"/>
@@ -51,15 +52,16 @@
         <UsageCount Value="25"/>
       </Unit3>
       <Unit4>
-        <Filename Value="core\objmeulayout.pas"/>
+        <Filename Value="src\entity\objmeulayout.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objMeuLayout"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="36" Y="6"/>
+        <TopLine Value="46"/>
+        <CursorPos X="36" Y="52"/>
         <UsageCount Value="25"/>
+        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
-        <Filename Value="core\objdynamicform.pas"/>
+        <Filename Value="src\core\objdynamicform.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objDynamicForm"/>
         <EditorIndex Value="-1"/>
@@ -76,7 +78,7 @@
         <UsageCount Value="23"/>
       </Unit6>
       <Unit7>
-        <Filename Value="core\utils.pas"/>
+        <Filename Value="src\core\utils.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Utils"/>
         <EditorIndex Value="-1"/>
@@ -85,7 +87,7 @@
         <UsageCount Value="23"/>
       </Unit7>
       <Unit8>
-        <Filename Value="core\libbusca.pas"/>
+        <Filename Value="src\core\libbusca.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="libBusca"/>
         <EditorIndex Value="-1"/>
@@ -93,7 +95,7 @@
         <UsageCount Value="23"/>
       </Unit8>
       <Unit9>
-        <Filename Value="core\untpesquisa.pas"/>
+        <Filename Value="src\core\untpesquisa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPesquisa"/>
         <ResourceBaseClass Value="Form"/>
@@ -104,7 +106,7 @@
         <UsageCount Value="23"/>
       </Unit9>
       <Unit10>
-        <Filename Value="core\objmenu.pas"/>
+        <Filename Value="src\core\objmenu.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objMenu"/>
         <EditorIndex Value="-1"/>
@@ -113,17 +115,16 @@
         <UsageCount Value="22"/>
       </Unit10>
       <Unit11>
-        <Filename Value="core\untmeulayout.pas"/>
+        <Filename Value="src\core\untmeulayout.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmMeuLayout"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="untMeuLayout"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="22"/>
-        <Loaded Value="True"/>
       </Unit11>
       <Unit12>
-        <Filename Value="core\untprincipal.pas"/>
+        <Filename Value="src\core\untprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPrincipal"/>
         <HasResources Value="True"/>
@@ -251,7 +252,12 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit28>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="src\entity\objmeulayout.pas"/>
+        <Caret Line="52" Column="36" TopLine="46"/>
+      </Position1>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>

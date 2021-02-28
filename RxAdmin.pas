@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX} cthreads, {$ENDIF}
   Interfaces, RaApplication, RaudusX, RaApplicationExe, RaConfig, untLogin,
   Utils, libBusca, untPesquisa, objMenu, untMeuLayout,
-  objOperador, untPrincipal;
+  objOperador, untprincipal;
 
 begin
   WriteLn('http://localhost:8080/ - open in browser');

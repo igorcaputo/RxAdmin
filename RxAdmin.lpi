@@ -41,7 +41,7 @@
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="core\untlogin.pas"/>
+        <Filename Value="src\core\untlogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmLogin"/>
         <HasResources Value="True"/>
@@ -49,7 +49,7 @@
         <UnitName Value="untLogin"/>
       </Unit1>
       <Unit2>
-        <Filename Value="core\uformdefault.pas"/>
+        <Filename Value="src\core\uformdefault.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormDefault"/>
         <HasResources Value="True"/>
@@ -57,7 +57,7 @@
         <UnitName Value="uFormDefault"/>
       </Unit2>
       <Unit3>
-        <Filename Value="core\untframedefault.pas"/>
+        <Filename Value="src\core\untframedefault.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrameDefault"/>
         <HasResources Value="True"/>
@@ -65,12 +65,12 @@
         <UnitName Value="untFrameDefault"/>
       </Unit3>
       <Unit4>
-        <Filename Value="core\objmeulayout.pas"/>
+        <Filename Value="src\entity\objmeulayout.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objMeuLayout"/>
       </Unit4>
       <Unit5>
-        <Filename Value="core\objdynamicform.pas"/>
+        <Filename Value="src\core\objdynamicform.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objDynamicForm"/>
       </Unit5>
@@ -80,36 +80,36 @@
         <UnitName Value="objOperador"/>
       </Unit6>
       <Unit7>
-        <Filename Value="core\utils.pas"/>
+        <Filename Value="src\core\utils.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Utils"/>
       </Unit7>
       <Unit8>
-        <Filename Value="core\libbusca.pas"/>
+        <Filename Value="src\core\libbusca.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="libBusca"/>
       </Unit8>
       <Unit9>
-        <Filename Value="core\untpesquisa.pas"/>
+        <Filename Value="src\core\untpesquisa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPesquisa"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPesquisa"/>
       </Unit9>
       <Unit10>
-        <Filename Value="core\objmenu.pas"/>
+        <Filename Value="src\core\objmenu.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objMenu"/>
       </Unit10>
       <Unit11>
-        <Filename Value="core\untmeulayout.pas"/>
+        <Filename Value="src\core\untmeulayout.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmMeuLayout"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="untMeuLayout"/>
       </Unit11>
       <Unit12>
-        <Filename Value="core\untprincipal.pas"/>
+        <Filename Value="src\core\untprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPrincipal"/>
         <HasResources Value="True"/>
@@ -125,7 +125,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir);pkg\dopf-master\core"/>
-      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity"/>
+      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity;src\core"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       <SrcPath Value="C:\Raudus\bin\lazide\"/>
     </SearchPaths>
