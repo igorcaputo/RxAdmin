@@ -105,6 +105,7 @@
         <Filename Value="src\core\untmeulayout.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmMeuLayout"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="untMeuLayout"/>
       </Unit11>

@@ -28,11 +28,9 @@ type
     lblNome: TRaLabel;
     RaPanel1: TRaPanel;
     pnlLogin: TRaPanel;
-    procedure FormActivate(Sender: TObject);
     procedure pnlLoginAjaxRequest(Sender: TComponent; EventName: string;
       Params: TRaStrings);
     procedure btnAcessarClick(Sender: TObject);
-    procedure RaIntervalTimer1Tick(Sender: TObject);
     procedure showPrincipal;
   private
     { private declarations }
@@ -59,8 +57,8 @@ var
 begin
 
   if (edtUsuario.Text <> '') and (edtSenha.Text <> '') then
-    if BuscaCampo('select OPR_ACESSOAD from OPERADOR_OPR where upper(OPR_LOGIN)=',
-      UpperCase(edtUsuario.Text), 'OPR_ACESSOAD') = '0' then
+    if BuscaCampo('select USO_ACESSOAD from USOARIO_USO where upper(USO_LOGIN)=',
+      UpperCase(edtUsuario.Text), 'USO_ACESSOAD') = '0' then
     begin
       try
         Operador := TOperador.Create;
@@ -69,7 +67,7 @@ begin
 
         OperadorOpf.Entity.Nome := UpperCase(edtUsuario.Text);
         OperadorOpf.Entity.Senha := edtSenha.Text;
-        OperadorOpf.Find(OperadorEntity, 'upper(opr_login) =:nome and opr_senha =:senha');
+        OperadorOpf.Find(OperadorEntity, 'upper(USO_login) =:nome and USO_senha =:senha');
 
         for Operador in OperadorEntity do
           WriteLn(Operador.Id);
@@ -98,27 +96,13 @@ procedure TfrmLogin.pnlLoginAjaxRequest(Sender: TComponent; EventName: string;
   Params: TRaStrings);
 begin
   FDbMapping := 'id:id,';
-  FDbMapping := FDbMapping + 'LoginAD:OPR_LOGIN,';
-  FDbMapping := FDbMapping + 'Nome:OPR_NOME,';
-  FDbMapping := FDbMapping + 'Email:OPR_EMAIL,';
-  FDbMapping := FDbMapping + 'DtCadastro:OPR_DTCADASTRO,';
-  FDbMapping := FDbMapping + 'CadastradoPor:OPR_NMCADASTRO,';
-  FDbMapping := FDbMapping + 'Senha:OPR_SENHA,';
-  FDbMapping := FDbMapping + 'AcessoAD:OPR_ACESSOAD';
-end;
-
-procedure TfrmLogin.FormActivate(Sender: TObject);
-//var
-//  parametro:string;
-begin
-//  parametro:=RaApplication.Application.GateQueryParams[1];
-end;
-
-//RaApplication.application.BrowserWindowOpen('http://bol.com.br');
-//CheckAccess('Limited','leonardorame','lrame123');
-
-procedure TfrmLogin.RaIntervalTimer1Tick(Sender: TObject);
-begin
+  FDbMapping := FDbMapping + 'LoginAD:USO_LOGIN,';
+  FDbMapping := FDbMapping + 'Nome:USO_NOME,';
+  FDbMapping := FDbMapping + 'Email:USO_EMAIL,';
+  FDbMapping := FDbMapping + 'DtCadastro:USO_DTCADASTRO,';
+  FDbMapping := FDbMapping + 'CadastradoPor:USO_NMCADASTRO,';
+  FDbMapping := FDbMapping + 'Senha:USO_SENHA,';
+  FDbMapping := FDbMapping + 'AcessoAD:USO_ACESSOAD';
 end;
 
 procedure TfrmLogin.showPrincipal;

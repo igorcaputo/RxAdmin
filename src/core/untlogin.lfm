@@ -7,7 +7,6 @@ object frmLogin: TfrmLogin
   Caption = 'Login de acesso.'
   ClientHeight = 282
   ClientWidth = 434
-  OnActivate = FormActivate
   Position = poScreenCenter
   LCLVersion = '2.0.2.0'
   object pnlLogin: TRaPanel
@@ -848,7 +847,6 @@ object frmLogin: TfrmLogin
     top = 16
   end
   object RaIntervalTimer1: TRaIntervalTimer
-    OnTick = RaIntervalTimer1Tick
     left = 536
     top = 32
   end

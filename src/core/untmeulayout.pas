@@ -34,6 +34,7 @@ type
     RaButton14: TRaButton;
     RaButton15: TRaButton;
     ckbMenuLado: TRaCheckBox;
+    RaImage1: TRaImage;
     RaLabel3: TRaLabel;
     RaLabel4: TRaLabel;
     RaOverlay1: TRaOverlay;

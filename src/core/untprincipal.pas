@@ -30,19 +30,15 @@ type
     lbxInformativo: TRaListBox;
     pnlInformativo: TRaPanel;
     pnlTopoAlerta1: TRaPanel;
-    RaBitButton1: TRaBitButton;
     RaBitButton2: TRaBitButton;
     CloseFrame: TRaButton;
     RaButton2: TRaButton;
-    RaButton21: TRaButton;
-    RaButton7: TRaButton;
     RaImage1: TRaImage;
     RaIntervalTimer1: TRaIntervalTimer;
     RaOverlay1: TRaOverlay;
     RaPanel1: TRaPanel;
     TopPanel_cfg: TRaPanel;
     RaPanel4: TRaPanel;
-    SubMenu: TRaScrollBox;
     TbcPrincipal: TRaTabControl;
     TbsPrincipal: TRaTabSheet;
     RaWwwPublisher1: TRaWwwPublisher;
@@ -59,6 +55,7 @@ type
     procedure RaBitButton1Click(Sender: TObject);
     procedure RaBitButton2Click(Sender: TObject);
     procedure btnCadPessoaClick(Sender: TObject);
+    procedure RaButton2Click(Sender: TObject);
     procedure RaButton7Click(Sender: TObject);
     procedure RaIntervalTimer1Tick(Sender: TObject);
   private
@@ -84,10 +81,6 @@ end;
 
 procedure TfrmPrincipal.btnRelatoriosClick(Sender: TObject);
 begin
-  vForm.NewFrame('TfrmMeuLayout', 'Meu Layout', CenterPanel);
-   vForm.LoadForm('TfrmCadEmpresa', Self, True, []);
-
-  //SiderPanel_cfg.Height := 428 + 200;
 end;
 
 procedure TfrmPrincipal.btnSairClick(Sender: TObject);
@@ -173,9 +166,7 @@ end;
 
 procedure TfrmPrincipal.RaBitButton1Click(Sender: TObject);
 begin
-  RaOverlay1.Left := RaApplication.Application.EventRectangle.Left;
-  RaOverlay1.Top := RaApplication.Application.EventRectangle.Bottom;
-  RaOverlay1.Show;
+
 end;
 
 procedure TfrmPrincipal.RaBitButton2Click(Sender: TObject);
@@ -192,18 +183,15 @@ begin
   vForm.NewFrame('TfrmCadPessoa', 'Cadastro de fornecedor', CenterPanel);
 end;
 
-procedure TfrmPrincipal.RaButton7Click(Sender: TObject);
-var
-  vRelatorio: TDynamicForm;
-
+procedure TfrmPrincipal.RaButton2Click(Sender: TObject);
 begin
-  Inc(FFrameCount);
-  vRelatorio := TDynamicForm.Create;
-  vRelatorio.Form := frmPrincipal;
-  vRelatorio.TabControl := TbcPrincipal;
-  vRelatorio.CenterPanel := CenterPanel;
-  vRelatorio.Tipo := 1;
-  vRelatorio.Procurar(frmPrincipal, FFrameCount, SiderPanel_cfg);
+  RaOverlay1.Left := RaApplication.Application.EventRectangle.Left;
+  RaOverlay1.Top := RaApplication.Application.EventRectangle.Bottom;
+  RaOverlay1.Show;
+end;
+
+procedure TfrmPrincipal.RaButton7Click(Sender: TObject);
+begin
 end;
 
 procedure TfrmPrincipal.RaIntervalTimer1Tick(Sender: TObject);
@@ -211,14 +199,9 @@ begin
   lblHora.Caption := DateTimeToStr(now);
 end;
 
-//  RaUploader1.Update;
-//  RaWwwPublisher1.FileURL := 'http://embarcadero.com/images/logo_new.gif';
-//  frmPreview.Show;
-
 procedure TfrmPrincipal.btnBuscaClick(Sender: TObject);
 begin
   vForm.NewFrame((Sender as TRaButton).Name, (Sender as TRaButton).Caption, CenterPanel);
-  //Pedido.Hide;
 end;
 
 procedure TfrmPrincipal.LoadSetting;

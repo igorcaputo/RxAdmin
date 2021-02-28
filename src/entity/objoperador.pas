@@ -68,15 +68,15 @@ var
   FDbMapping: string;
 begin
   FDbMapping := 'id:id,';
-  FDbMapping := FDbMapping + 'LoginAD:OPR_LOGIN,';
-  FDbMapping := FDbMapping + 'Nome:OPR_NOME,';
-  FDbMapping := FDbMapping + 'Email:OPR_EMAIL,';
-  FDbMapping := FDbMapping + 'DtCadastro:OPR_DTCADASTRO,';
-  FDbMapping := FDbMapping + 'CadastradoPor:OPR_NMCADASTRO,';
-  FDbMapping := FDbMapping + 'Senha:OPR_SENHA,';
-  FDbMapping := FDbMapping + 'AcessoAD:OPR_ACESSOAD';
+  FDbMapping := FDbMapping + 'LoginAD:USO_LOGIN,';
+  FDbMapping := FDbMapping + 'Nome:USO_NOME,';
+  FDbMapping := FDbMapping + 'Email:USO_EMAIL,';
+  FDbMapping := FDbMapping + 'DtCadastro:USO_DTCADASTRO,';
+  FDbMapping := FDbMapping + 'CadastradoPor:USO_NMCADASTRO,';
+  FDbMapping := FDbMapping + 'Senha:USO_SENHA,';
+  FDbMapping := FDbMapping + 'AcessoAD:USO_ACESSOAD';
 
-  inherited Create(dbutils.con, 'OPERADOR_OPR', FDbMapping);
+  inherited Create(dbutils.con, 'USUARIO_USO', FDbMapping);
 end;
 
 end.
