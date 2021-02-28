@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="Raudus Application"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0"/>
+    </RunParams>
+    <RequiredPackages Count="4">
+      <Item1>
+        <PackageName Value="RaudusX"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="RaudusFPC"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="FCL"/>
+      </Item4>
+    </RequiredPackages>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="RxAdmin.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="core\untlogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="untLogin"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="core\uformdefault.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDefault"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFormDefault"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="core\untframedefault.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrameDefault"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="untFrameDefault"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="core\objmeulayout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="objMeuLayout"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="core\objdynamicform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="objDynamicForm"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="src\entity\objoperador.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="objOperador"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="core\utils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Utils"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="core\libbusca.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="libBusca"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="core\untpesquisa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPesquisa"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="untPesquisa"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="core\objmenu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="objMenu"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="core\untmeulayout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMeuLayout"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="untMeuLayout"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="core\untprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="C:\Desenvolvimento\Projetos\RxAdmin\trunk\bin\RxAdmin.exe"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir);pkg\dopf-master\core"/>
+      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      <SrcPath Value="C:\Raudus\bin\lazide\"/>
+    </SearchPaths>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
