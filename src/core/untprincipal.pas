@@ -115,7 +115,11 @@ end;
 procedure TfrmPrincipal.FormActivate(Sender: TObject);
 var
   FConfig: TDynamicForm;
+  parametro:string;
 begin
+
+  parametro:=RaApplication.Application.GateQueryParams;
+
   if frmPrincipal = nil then
     exit;
   //  frmPrincipal.Top := headerpanel.Height + 1;
@@ -125,6 +129,9 @@ begin
   FConfig := TDynamicForm.Create;
   FConfig.LoadSetting(Self);
   FConfig.Free;
+
+
+
 end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);

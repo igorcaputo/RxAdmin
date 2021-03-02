@@ -5,8 +5,8 @@ object frmPrincipal: TfrmPrincipal
   Width = 1366
   BorderStyle = bsNone
   Caption = 'frmPrincipal'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 705
+  ClientWidth = 1366
   Color = 15658734
   FormStyle = fsMDIForm
   OnActivate = FormActivate

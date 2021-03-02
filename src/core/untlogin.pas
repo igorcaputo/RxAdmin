@@ -109,7 +109,10 @@ end;
 procedure TfrmLogin.FormActivate(Sender: TObject);
 var
   FConfig: TDynamicForm;
+  parametro:string;
 begin
+  parametro:=RaApplication.Application.GateQueryParams;
+
   FConfig := TDynamicForm.Create;
   FConfig.LoadSetting(Self);
   FConfig.Free;
