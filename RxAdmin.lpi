@@ -117,12 +117,11 @@
         <ResourceBaseClass Value="Form"/>
       </Unit12>
       <Unit13>
-        <Filename Value="src\cadastro\untusuario1.pas"/>
+        <Filename Value="src\cadastro\untusuario.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmUsuario1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <UnitName Value="untUsuario1"/>
       </Unit13>
     </Units>
   </ProjectOptions>

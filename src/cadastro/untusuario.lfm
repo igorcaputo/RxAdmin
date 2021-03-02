@@ -1,0 +1,193 @@
+inherited frmUsuario1: TfrmUsuario1
+  Height = 365
+  Width = 642
+  ClientHeight = 365
+  ClientWidth = 642
+  DesignLeft = 429
+  DesignTop = 198
+  inherited pnlTopo: TRaPanel
+    Width = 642
+    ClientWidth = 642
+    inherited btnFechar: TRaBitButton
+      Left = 611
+    end
+  end
+  inherited Container: TRaPanel
+    Height = 332
+    Width = 642
+    ClientWidth = 642
+    ClientHeight = 332
+    object edtLoginAD: TRaEdit[0]
+      Left = 85
+      Height = 21
+      Top = 16
+      Width = 121
+      TabOrder = 2
+      UI = 'cupertino'
+    end
+    object edtNome: TRaEdit[1]
+      Left = 85
+      Height = 21
+      Top = 43
+      Width = 425
+      TabOrder = 3
+      UI = 'cupertino'
+    end
+    object lbLoginAD: TRaLabel[2]
+      Left = 16
+      Height = 14
+      Top = 23
+      Width = 55
+      ParentColor = False
+      Caption = 'Login AD'
+    end
+    object lbNome: TRaLabel[3]
+      Left = 16
+      Height = 14
+      Top = 50
+      Width = 55
+      ParentColor = False
+      Caption = 'Nome'
+    end
+    object pnlConfirma: TRaPanel[4]
+      Left = 0
+      Height = 74
+      Top = 258
+      Width = 642
+      Align = alBottom
+      ClientWidth = 642
+      ClientHeight = 74
+      Color = 14998739
+      TabOrder = 0
+      UI = 'cupertino'
+      object btnExcluir: TRaButton
+        Left = 356
+        Height = 32
+        Top = 21
+        Width = 120
+        Caption = 'Excluir'
+        Color = 4212963
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = 'Century Gothic'
+        ParentFont = False
+        TabOrder = 1
+        UI = 'simple'
+      end
+      object btnGravar: TRaButton
+        Left = 224
+        Height = 32
+        Top = 21
+        Width = 131
+        Caption = 'Gravar'
+        Color = 8237426
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = 'Century Gothic'
+        ParentFont = False
+        TabOrder = 1
+        UI = 'simple'
+        OnClick = btnGravarClick
+      end
+    end
+    object RaBitButton1: TRaBitButton[5]
+      Left = 212
+      Height = 21
+      Top = 16
+      Width = 21
+      Caption = 'RaBitButton1'
+      TabOrder = 15
+      OnClick = RaBitButton1Click
+      Glyph.Data = {
+        3E020000424D3E0200000000000036000000280000000D0000000D0000000100
+        1800000000000802000064000000640000000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA6BBD814488CA494
+        9900FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8FAED2
+        0881D400ADFF14599B00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFF81A8D2399ADD38C3FF1694DEAECAE600FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFF8ABAE77BC1EBA1E9FF3B9ADBADC6E2FFFFFF00FFFFFFFFFFFF
+        C2B2B18867688F6E688E6E6CBB98984692D3ABF1FF63B2E7AAC8E8FFFFFFFFFF
+        FF00F8F6F69F8484C3AFABFFFFFFFFFFF2FFFDD7C79F82965F583195DBB2DAF6
+        FFFFFFFFFFFFFFFFFF00C2B0AFD3C5C3FFFFFFFDFAEDF9F1D8F4E7C7FEECC7D2
+        9D78BCA4A8FFFFFFFFFFFFFFFFFFFFFFFF009D817FFFFFFFFCFBF3FBF4E5FBF5
+        E1F3EACDEAD0B0F4D7ADA47A72FFFFFFFFFFFFFFFFFFFFFFFF009F8784FFFFFF
+        F9F2DDFAF7E5FAF0DBEFDBBBECD8B9F3D4AEAD8172F6F5F9FFFFFFFFFFFFFFFF
+        FF00A68C86FFFFE9F8ECD0F8F0D6F1E2C6FFFFFFF8F4DDEECEA3AC8177FFFFFF
+        FFFFFFFFFFFFFFFFFF00C2AEADEBD6B5F7E6C1EBD5B6F0E1C6FAF6DFF6E4C1D5
+        A47EC4AFB0FFFFFFFFFFFFFFFFFFFFFFFF00EFEBEDBEA19AE0C09FEFCEA4F1D2
+        ACEDC79DD5A682C5A59BF6F6F7FFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFF3F0F2
+        D4C3C3BEA197C6A094C1A197DACBCAF8F8FAFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FF00
+      }
+    end
+    object edtSenha: TRaEdit[6]
+      Left = 85
+      Height = 21
+      Top = 116
+      Width = 121
+      PasswordChar = #1
+      TabOrder = 6
+      UI = 'cupertino'
+    end
+    object edtConfirmaSenha: TRaEdit[7]
+      Left = 85
+      Height = 21
+      Top = 143
+      Width = 121
+      PasswordChar = #1
+      TabOrder = 6
+      UI = 'cupertino'
+    end
+    object lbSenha: TRaLabel[8]
+      Left = 16
+      Height = 14
+      Top = 123
+      Width = 55
+      ParentColor = False
+      Caption = 'Senha'
+    end
+    object lbConfirmacao: TRaLabel[9]
+      Left = 16
+      Height = 14
+      Top = 150
+      Width = 64
+      ParentColor = False
+      Caption = 'Confirmação'
+    end
+    object lbConfirma: TRaLabel[10]
+      Left = 216
+      Height = 14
+      Top = 131
+      Width = 240
+      Font.Color = clRed
+      ParentColor = False
+      ParentFont = False
+    end
+    object edtEmail: TRaEdit[11]
+      Left = 85
+      Height = 21
+      Top = 70
+      Width = 425
+      TabOrder = 6
+      UI = 'cupertino'
+    end
+    object lbEmail: TRaLabel[12]
+      Left = 16
+      Height = 14
+      Top = 77
+      Width = 55
+      ParentColor = False
+      Caption = 'E-mail'
+    end
+    object ckbAD: TRaCheckBox[13]
+      Left = 85
+      Height = 18
+      Top = 96
+      Width = 121
+      Caption = 'Não autenticar pelo AD'
+      TabOrder = 13
+    end
+  end
+end

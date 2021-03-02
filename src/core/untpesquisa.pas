@@ -168,6 +168,7 @@ begin
   if Assigned(CampoDb) then
     CampoDb.Caption := dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString;
 
+  writeln(dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString);
   if (dtsBusca.DataSet.RecordCount > 0) then
   begin
     Id.Text := dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString;
