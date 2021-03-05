@@ -60,16 +60,18 @@
         <Filename Value="src\core\objdynamicform.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objDynamicForm"/>
-        <EditorIndex Value="-1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="215"/>
         <CursorPos Y="223"/>
         <UsageCount Value="25"/>
+        <Loaded Value="True"/>
       </Unit5>
       <Unit6>
         <Filename Value="src\entity\objusuario.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objUsuario"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="65"/>
         <CursorPos X="32"/>
         <UsageCount Value="22"/>
@@ -87,9 +89,9 @@
         <Filename Value="src\core\libbusca.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="libBusca"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="136"/>
-        <CursorPos Y="142"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="23"/>
+        <CursorPos X="53" Y="39"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit8>
@@ -97,13 +99,15 @@
         <Filename Value="src\core\untpesquisa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPesquisa"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPesquisa"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="160"/>
-        <CursorPos Y="172"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="189"/>
+        <CursorPos X="34" Y="190"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit9>
       <Unit10>
         <Filename Value="src\core\objmenu.pas"/>
@@ -121,7 +125,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="untMeuLayout"/>
-        <EditorIndex Value="1"/>
         <TopLine Value="78"/>
         <CursorPos Y="85"/>
         <UsageCount Value="24"/>
@@ -143,12 +146,11 @@
         <ComponentName Value="frmUsuario1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="78"/>
-        <CursorPos Y="88"/>
-        <UsageCount Value="22"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="171"/>
+        <CursorPos Y="189"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="unit1.pas"/>
@@ -288,28 +290,16 @@
         <UsageCount Value="10"/>
       </Unit32>
       <Unit33>
-        <Filename Value="src\cadastro\untusuario.pas"/>
-        <ComponentName Value="frmOperador"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="untUsuario"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="179"/>
-        <CursorPos Y="190"/>
-        <UsageCount Value="10"/>
-      </Unit33>
-      <Unit34>
         <Filename Value="src\cadastro\untusuario1.lfm"/>
         <ComponentName Value="frmUsuario1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="18" Y="7"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit34>
-      <Unit35>
+      </Unit33>
+      <Unit34>
         <Filename Value="..\..\MobbERP\trunk\core\untlogin1.pas"/>
         <ComponentName Value="frmLogin1"/>
         <HasResources Value="True"/>
@@ -318,29 +308,41 @@
         <TopLine Value="116"/>
         <CursorPos Y="119"/>
         <UsageCount Value="10"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="src\cadastro\untusuario.lfm"/>
+        <EditorIndex Value="4"/>
+        <CursorPos Y="8"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit35>
     </Units>
-    <JumpHistory Count="5" HistoryIndex="4">
+    <JumpHistory Count="6" HistoryIndex="5">
       <Position1>
-        <Filename Value="src\cadastro\untusuario1.lfm"/>
-        <Caret Line="7" Column="18" TopLine="3"/>
+        <Filename Value="src\core\libbusca.pas"/>
+        <Caret Line="142" TopLine="136"/>
       </Position1>
       <Position2>
-        <Filename Value="src\cadastro\untusuario1.lfm"/>
-        <Caret Line="7" Column="18"/>
+        <Filename Value="src\core\untpesquisa.pas"/>
+        <Caret Line="172" TopLine="160"/>
       </Position2>
       <Position3>
-        <Filename Value="src\cadastro\untusuario1.lfm"/>
-        <Caret Line="7" Column="18"/>
+        <Filename Value="src\core\libbusca.pas"/>
+        <Caret Line="96" Column="34" TopLine="86"/>
       </Position3>
       <Position4>
         <Filename Value="src\core\libbusca.pas"/>
-        <Caret Line="142" TopLine="136"/>
+        <Caret Line="29" TopLine="19"/>
       </Position4>
       <Position5>
-        <Filename Value="src\core\untpesquisa.pas"/>
-        <Caret Line="172" TopLine="160"/>
+        <Filename Value="src\core\libbusca.pas"/>
+        <Caret Line="57" TopLine="43"/>
       </Position5>
+      <Position6>
+        <Filename Value="src\cadastro\untusuario.lfm"/>
+        <Caret Line="8"/>
+      </Position6>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
