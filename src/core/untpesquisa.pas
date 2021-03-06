@@ -120,8 +120,8 @@ begin
   else
   begin
     //oSelect := oSelect + ' WHERE ' + Copy(CRI, 6, Length(CRI));
-    FQuery.SQL.Add(oSelect + ' WHERE ' + Copy(Condicao_zero,
-      6, Length(Condicao_zero)) + aOrdem);
+    FQuery.SQL.Add(oSelect + ' WHERE ' + Copy(Condicao_zero, 6,
+      Length(Condicao_zero)) + aOrdem);
   end;
   //WriteLn(FQuery.sql.Strings[0]);
   FQuery.SQL.SaveToFile('aaa.txt');
@@ -162,24 +162,27 @@ procedure TfrmPesquisa.FormClose(Sender: TObject; var CloseAction: TCloseAction)
 var
   VRetorno: string;
 begin
-  //  for VRetorno in CampoRET do
-  //    writeln(VRetorno);
 
-  if Assigned(CampoDb) then
-    CampoDb.Caption := dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString;
-
-  writeln(dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString);
-  if (dtsBusca.DataSet.RecordCount > 0) then
+  if dtsBusca.DataSet.RecordCount > 0 then
   begin
-    Id.Text := dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString;
+    //  for VRetorno in CampoRET do
+    //    writeln(VRetorno);
+
+    if Assigned(CampoDb) then
+      CampoDb.Caption := dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString;
+
+    writeln(dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString);
+    if (dtsBusca.DataSet.RecordCount > 0) then
+    begin
+      Id.Text := dtsBusca.DataSet.FieldByName(CampoRET[0]).AsString;
+    end;
+
+    if length(CampoRET) >= 2 then
+      Campo1.Text := dtsBusca.DataSet.FieldByName(CampoRET[1]).AsString;
+
+    //  if Framework then
+    //    Campo.OnExit(Sender);
   end;
-
-  if length(CampoRET) >= 2 then
-    Campo1.Text := dtsBusca.DataSet.FieldByName(CampoRET[1]).AsString;
-
-  //  if Framework then
-  //    Campo.OnExit(Sender);
-
   con.Disconnect;
 end;
 

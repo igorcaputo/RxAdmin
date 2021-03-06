@@ -55,6 +55,7 @@ type
     procedure RaBitButton1Click(Sender: TObject);
     procedure RaBitButton2Click(Sender: TObject);
     procedure btnCadPessoaClick(Sender: TObject);
+    procedure RaButton1Click(Sender: TObject);
     procedure RaButton2Click(Sender: TObject);
     procedure RaButton7Click(Sender: TObject);
     procedure RaIntervalTimer1Tick(Sender: TObject);
@@ -188,6 +189,11 @@ procedure TfrmPrincipal.btnCadPessoaClick(Sender: TObject);
 begin
   Inc(FFrameCount);
   vForm.NewFrame('TfrmCadPessoa', 'Cadastro de fornecedor', CenterPanel);
+end;
+
+procedure TfrmPrincipal.RaButton1Click(Sender: TObject);
+
+begin
 end;
 
 procedure TfrmPrincipal.RaButton2Click(Sender: TObject);

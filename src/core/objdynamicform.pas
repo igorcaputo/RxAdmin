@@ -216,8 +216,8 @@ begin
   aClass := GetClass(ANome_form);
   Inc(FFrameCount);
 
-  //  sbx:= TRaScrollBox.Create(FForm);
-  //  sbx.direction := rsdVertical;
+    //sbx:= TRaScrollBox.Create(FForm);
+    //sbx.direction := rsdVertical;
 
   pnl := TRaPanel.Create(FForm);
   aFrame := TFrameDefault(TControlClass(aClass).Create(pnl));

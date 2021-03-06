@@ -64,21 +64,21 @@ type
     property Tipo: integer read Get_Tipo write Set_Tipo;
 
     procedure CarregaMenu;
-    procedure Procurar(const AForm: TRaFormCompatible; var AFrameCount: integer;
-      var ARelatorios: TRaScrollBox);
+    procedure Relatorio(const AForm: TRaFormCompatible; var AFrameCount: integer;
+      ACaption: string; var ASubMenuScroll: TRaScrollBox;var ASubMenu: TRaOverlay);
 
     procedure CriarItemMenu(const AForm: TRaFormCompatible; ATag:integer;
-      AMenu, AName, ACaption: string; var ARelatorios: TRaScrollBox; var ASubMenu: TRaOverlay);
+      AMenu, AName, ACaption: string; var ASubMenuScroll: TRaScrollBox; var ASubMenu: TRaOverlay);
 
     procedure CriarMenu(const AForm: TRaFormCompatible; AName, ACaption: string;
-      AHeight: integer; var ARelatorios: TRaScrollBox; var ASubMenu: TRaOverlay);
+      AHeight: integer; var ASubMenuScroll: TRaScrollBox; var ASubMenu: TRaOverlay);
 
     function funcStringToArray(strConverte: string; const chrDelimita: char): StringArray;
   end;
 
 implementation
 
-uses untFrameDefault;
+uses untFrameDefault, dbutils;
 
 function TMenu.funcStringToArray(strConverte: string;
   const chrDelimita: char): StringArray;
@@ -282,15 +282,11 @@ var
   qry: TdSQLdbQuery;
   vSubMenu: TRaOverlay;
   sMenu: string;
-
   x:integer;
 
 begin
   x := 0;
-
-  con := TdSQLdbConnector.Create(nil);
-  con.Driver := 'sqlite3';
-  con.Database := 'C:\Desenvolvimento\Projetos\RxAdmin\trunk\RxAdmin.db';
+  con := dbutils.con;
   con.Connect;
 
   qry := TdSQLdbQuery.Create(con);
@@ -320,7 +316,7 @@ begin
     else
     begin
       if (qry.Field('MNU_CDSUBMENU').AsString <> '') and
-         (sMenu = qry.Field('MNU_CDMENU').AsString) then
+         (sMenu = qry.Field('MNU_CDMENU').AsString) and (sMenu <> 'Relatorio') then
       begin
         vSubMenu.Height := vSubMenu.Height + qry.Field('MNU_HEIGHT').AsInteger;
         CriarItemMenu(Form,
@@ -330,6 +326,13 @@ begin
           qry.Field('MNU_DESCRICAO').AsString,
           FSideBar,vSubMenu);
       end;
+      if (qry.Field('MNU_CDSUBMENU').AsString <> '') and
+         ('Relatorio' = qry.Field('MNU_CDMENU').AsString) then
+      begin
+        vSubMenu.Height := vSubMenu.Height + qry.Field('MNU_HEIGHT').AsInteger;
+        Relatorio(Form, x,qry.Field('MNU_DESCRICAO').AsString,FSideBar,vSubMenu);
+
+      end;
     end;
 
     qry.Next;
@@ -337,8 +340,8 @@ begin
   con.Disconnect;
 end;
 
-procedure TMenu.Procurar(const AForm: TRaFormCompatible; var AFrameCount: integer;
-  var ARelatorios: TRaScrollBox);
+procedure TMenu.Relatorio(const AForm: TRaFormCompatible; var AFrameCount: integer;
+  ACaption: string; var ASubMenuScroll: TRaScrollBox;var ASubMenu: TRaOverlay);
 var
   vButton: TRaBitButton;
   RaImage1: TRaImage;
@@ -346,25 +349,27 @@ var
 begin
   RaImage1 := TRaImage.Create(nil);
   vButton := TRaBitButton.Create(nil);
-  vButton.Parent := ARelatorios;
+  vButton.Parent := ASubMenu;
 
   vButton.onclick := @btnBuscaClick;
   vButton.Name := 'TfrmRelatorio';
   vButton.ParentColor := True;
-  vButton.Caption := 'asasasa';
-
-  vButton.Left := ARelatorios.Left;
+  vButton.Caption := ACaption;
+  vButton.Tag := 1;
+  vButton.Left := ASubMenu.Left;
+  vButton.UI := 'simple';
   vButton.Width := 179;
   vButton.Height := 32;
+  vButton.Font.Size:= 16;
   vButton.Align := alTop;
   vButton.AutoSize := True;
   vButton.AutoSizeDelayed;
 
-  ARelatorios.Height := ARelatorios.Height + 48;
+  //ASubMenu.Height := ASubMenu.Height + 48;
 end;
 
 procedure TMenu.CriarItemMenu(const AForm: TRaFormCompatible; ATag:integer;
-  AMenu, AName, ACaption: string; var ARelatorios: TRaScrollBox; var ASubMenu: TRaOverlay);
+  AMenu, AName, ACaption: string; var ASubMenuScroll: TRaScrollBox; var ASubMenu: TRaOverlay);
 var
   vButton: TRaBitButton;
   RaImage1: TRaImage;
@@ -373,7 +378,8 @@ begin
   FMenu := ASubMenu;
   RaImage1 := TRaImage.Create(nil);
   vButton := TRaBitButton.Create(nil);
-  vButton.Parent := ASubMenu;//ARelatorios;
+  (*Ver uma forma de colocar esta opçao dinamica*)
+  vButton.Parent := ASubMenu;//ASubMenuScroll;//
   vButton.onclick := @btnBuscaClick;
   vButton.Name := AName;
 
@@ -381,7 +387,7 @@ begin
   vButton.ParentColor := True;
   vButton.Caption := ACaption;
   vButton.UI := 'simple';
-  vButton.Left := ARelatorios.Left;
+  vButton.Left := ASubMenuScroll.Left;
   vButton.Width := 179;
   vButton.Height := 32;
   vButton.Font.Size:= 16;
@@ -391,7 +397,7 @@ begin
 end;
 
 procedure TMenu.CriarMenu(const AForm: TRaFormCompatible; AName, ACaption: string;
-  AHeight: integer; var ARelatorios: TRaScrollBox; var ASubMenu: TRaOverlay);
+  AHeight: integer; var ASubMenuScroll: TRaScrollBox; var ASubMenu: TRaOverlay);
 var
   vButton: TRaBitButton;
 begin
@@ -399,10 +405,10 @@ begin
   vButton.onclick := @ButtonClick;
   vButton.Name := AName;
   vButton.ParentColor := True;
-  vButton.Parent := ARelatorios;
+  vButton.Parent := ASubMenuScroll;
   vButton.Caption := ACaption;
   vButton.UI := 'simple';
-  vButton.Left := ARelatorios.Left;
+  vButton.Left := ASubMenuScroll.Left;
   vButton.Width := 179;
   vButton.Height := 32;
   vButton.Font.Size:= 16;

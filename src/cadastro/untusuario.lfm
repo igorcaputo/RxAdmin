@@ -1,17 +1,10 @@
-inherited frmUsuario1: TfrmUsuario1
+inherited frmUsuario: TfrmUsuario
   Height = 365
   Width = 642
   ClientHeight = 365
   ClientWidth = 642
   DesignLeft = 429
   DesignTop = 198
-  inherited pnlTopo: TRaPanel
-    Width = 642
-    ClientWidth = 642
-    inherited btnFechar: TRaBitButton
-      Left = 611
-    end
-  end
   inherited Container: TRaPanel
     Height = 332
     Width = 642
@@ -185,7 +178,7 @@ inherited frmUsuario1: TfrmUsuario1
       Left = 85
       Height = 18
       Top = 96
-      Width = 121
+      Width = 179
       Caption = 'Não autenticar pelo AD'
       TabOrder = 13
     end

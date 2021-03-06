@@ -9,9 +9,9 @@ uses
   untFrameDefault, objUsuario;
 
 type
-  { TfrmUsuario1 }
+  { TfrmUsuario }
 
-  TfrmUsuario1 = class(TFrameDefault)
+  TfrmUsuario = class(TFrameDefault)
     btnExcluir: TRaButton;
     btnGravar: TRaButton;
     edtLoginAD: TRaEdit;
@@ -44,7 +44,7 @@ type
   end;
 
 var
-  frmUsuario: TfrmUsuario1;
+  frmUsuario: TfrmUsuario;
 
 implementation
 {$R *.lfm}
@@ -52,9 +52,9 @@ implementation
 uses libBusca,
   Utils, dbutils;
 
-{ TfrmUsuario1 }
+{ TfrmUsuario }
 
-procedure TfrmUsuario1.FormShow(Sender: TObject);
+procedure TfrmUsuario.FormShow(Sender: TObject);
 begin
   lbSenha.Visible := false;
   edtSenha.Visible := false;
@@ -62,7 +62,7 @@ begin
   edtConfirmaSenha.Visible := false;
 end;
 
-procedure TfrmUsuario1.btnExcluirClick(Sender: TObject);
+procedure TfrmUsuario.btnExcluirClick(Sender: TObject);
 begin
   Usuario := TUsuario.Create;
   UsuarioOpf := TUsuarioOpf.Create;
@@ -83,7 +83,7 @@ begin
   end;
 end;
 
-procedure TfrmUsuario1.btnGravarClick(Sender: TObject);
+procedure TfrmUsuario.btnGravarClick(Sender: TObject);
 begin
   Usuario := TUsuario.Create;
   UsuarioOpf := TUsuarioOpf.Create;
@@ -118,7 +118,7 @@ begin
   end;
 end;
 
-procedure TfrmUsuario1.ckbADClick(Sender: TObject);
+procedure TfrmUsuario.ckbADClick(Sender: TObject);
 begin
   lbSenha.Visible := ckbAD.Checked;
   edtSenha.Visible := ckbAD.Checked;
@@ -126,7 +126,7 @@ begin
   edtConfirmaSenha.Visible := ckbAD.Checked;
 end;
 
-procedure TfrmUsuario1.edtConfirmaSenhaChange(Sender: TObject);
+procedure TfrmUsuario.edtConfirmaSenhaChange(Sender: TObject);
 begin
   if (edtSenha.Text <> edtConfirmaSenha.Text) then
   begin
@@ -137,7 +137,7 @@ begin
     lbConfirma.Visible := False;
 end;
 
-procedure TfrmUsuario1.edtLoginADEnter(Sender: TObject);
+procedure TfrmUsuario.edtLoginADEnter(Sender: TObject);
 begin
   try
     if edtID.Text <> '' then
@@ -156,7 +156,7 @@ begin
   end;
 end;
 
-procedure TfrmUsuario1.RaBitButton1Click(Sender: TObject);
+procedure TfrmUsuario.RaBitButton1Click(Sender: TObject);
 var
   VRetorno: TRetornoArray;
 
@@ -173,17 +173,17 @@ begin
   edtLoginAD.SetFocus;
 end;
 
-constructor TfrmUsuario1.Create(AOwner: TComponent);
+constructor TfrmUsuario.Create(AOwner: TComponent);
 begin
   inherited Create(AOwner);
   edtID := TRaEdit.Create(Self);
 end;
 
 initialization
-  RegisterClass(TfrmUsuario1);
+  RegisterClass(TfrmUsuario);
 
 finalization
-  UnRegisterClass(TfrmUsuario1);
+  UnRegisterClass(TfrmUsuario);
 
 end.
 

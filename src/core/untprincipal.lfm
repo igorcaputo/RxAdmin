@@ -75,7 +75,7 @@ object frmPrincipal: TfrmPrincipal
     ClientHeight = 641
     Color = 4273449
     object CloseFrame: TRaButton
-      Left = 8
+      Left = 48
       Height = 25
       Top = 216
       Width = 75
@@ -154,10 +154,10 @@ object frmPrincipal: TfrmPrincipal
       OnClick = btnSairClick
     end
     object edtBusca1: TRaEdit
-      Left = 824
+      Left = 624
       Height = 30
       Top = 13
-      Width = 251
+      Width = 451
       Anchors = [akTop, akRight]
       TabOrder = 2
       UI = 'cupertino'
