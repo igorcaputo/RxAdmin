@@ -84,6 +84,14 @@ object frmPrincipal: TfrmPrincipal
       Visible = False
       OnClick = CloseFrameClick
     end
+    object RaLabel1: TRaLabel
+      Left = 16
+      Height = 30
+      Top = 272
+      Width = 152
+      ParentColor = False
+      Caption = '<input type="date" id="birthday" name="birthday">'
+    end
   end
   object TbcPrincipal: TRaTabControl
     Left = 198

@@ -1,20 +1,28 @@
 inherited frmMeuLayout: TfrmMeuLayout
-  Height = 508
+  Height = 494
   Width = 1027
-  ClientHeight = 508
+  ClientHeight = 494
   ClientWidth = 1027
-  DesignLeft = 365
-  DesignTop = 53
-  inherited Container: TRaPanel
-    Height = 475
+  DesignLeft = 142
+  DesignTop = 184
+  inherited pnlTopo: TRaPanel
     Width = 1027
     ClientWidth = 1027
-    ClientHeight = 475
+    inherited btnFechar: TRaBitButton
+      Left = 996
+    end
+  end
+  inherited Container: TRaPanel
+    Height = 461
+    Width = 1027
+    ClientWidth = 1027
+    ClientHeight = 461
     object pnlMeuLayout: TRaPanel[0]
       Left = 8
       Height = 440
       Top = 8
       Width = 1000
+      Anchors = [akTop, akLeft, akRight, akBottom]
       BevelInner = bvLowered
       ClientWidth = 1000
       ClientHeight = 440
@@ -1268,5 +1276,10 @@ inherited frmMeuLayout: TfrmMeuLayout
         end
       end
     end
+  end
+  object RaApplicationEvents1: TRaApplicationEvents[2]
+    OnScreenResize = RaApplicationEvents1ScreenResize
+    left = 344
+    top = 128
   end
 end

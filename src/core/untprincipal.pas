@@ -35,6 +35,7 @@ type
     RaButton2: TRaButton;
     RaImage1: TRaImage;
     RaIntervalTimer1: TRaIntervalTimer;
+    RaLabel1: TRaLabel;
     RaOverlay1: TRaOverlay;
     RaPanel1: TRaPanel;
     TopPanel_cfg: TRaPanel;
@@ -67,6 +68,7 @@ type
     procedure btnBuscaClick(Sender: TObject);
     procedure LoadSetting;
   public
+    parametro:string;
   end;
 
 var
@@ -116,10 +118,12 @@ end;
 procedure TfrmPrincipal.FormActivate(Sender: TObject);
 var
   FConfig: TDynamicForm;
-  parametro:string;
+  Arq:TStringList;
 begin
+  Arq := TStringList.Create;
 
-  parametro:=RaApplication.Application.GateQueryParams;
+  Arq.Add(RaApplication.Application.GateQueryParams);
+  Arq.SaveToFile('peso.txt');
 
   if frmPrincipal = nil then
     exit;
@@ -130,7 +134,7 @@ begin
   FConfig := TDynamicForm.Create;
   FConfig.LoadSetting(Self);
   FConfig.Free;
-
+  Arq.Free;
 
 
 end;
@@ -209,7 +213,7 @@ end;
 
 procedure TfrmPrincipal.RaIntervalTimer1Tick(Sender: TObject);
 begin
-  lblHora.Caption := DateTimeToStr(now);
+  lblHora.Caption := formatdatetime('dd/mm/yyyy hh:nn:ss',now);
 end;
 
 procedure TfrmPrincipal.btnBuscaClick(Sender: TObject);

@@ -31,6 +31,7 @@ type
     Login: TRaButton;
     Login_cfg: TRaPanel;
     MenuLado_cfg: TRaPanel;
+    RaApplicationEvents1: TRaApplicationEvents;
     RaButton14: TRaButton;
     RaButton15: TRaButton;
     ckbMenuLado: TRaCheckBox;
@@ -71,6 +72,7 @@ type
     procedure lblCorFundoAjaxRequest(Sender: TComponent; EventName: string;
       Params: TRaStrings);
     procedure ckbMenuLadoClick(Sender: TObject);
+    procedure RaApplicationEvents1ScreenResize(Sender: TObject);
     procedure RaLabelCheckAjaxRequest(Sender: TComponent; EventName: string;
       Params: TRaStrings);
     procedure RaPanel2AjaxRequest(Sender: TComponent; EventName: string;
@@ -152,6 +154,8 @@ var
 begin
   inherited Create(AOwner);
 
+ // pnlMeuLayout.Left := Round((pnlMeuLayout.Width - RaApplication.Application.ScreenWidth) / 2);
+
   txtCaption := '<input type="color" id="CorFundo" onclick="Rfe.ajaxRequest( #idControl, '
     + QuotedStr('onclick') + ', this.value)">';
 
@@ -165,8 +169,6 @@ begin
   idControl := lblCorFonte.ID;
   txtCaption := StringReplace(txtCaption, '#idControl',IntToStr(idControl), [rfReplaceAll]);
   lblCorFonte.Caption := txtCaption;
-
- // pnlMeuLayout.Left := Round((pnlMeuLayout.Width - RaApplication.Application.ScreenWidth) / 2);
 
   loadSetting;
 end;
@@ -289,6 +291,11 @@ begin
 
   MenuLado_cfg.Visible := ckbMenuLado.checked;
   Menu_cfg.Visible:= ckbMenuBaixo.checked;
+end;
+
+procedure TfrmMeuLayout.RaApplicationEvents1ScreenResize(Sender: TObject);
+begin
+ // pnlMeuLayout.Left := Round((pnlMeuLayout.Width - RaApplication.Application.ScreenWidth) / 2);
 end;
 
 initialization

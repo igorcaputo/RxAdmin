@@ -109,13 +109,17 @@ end;
 procedure TfrmLogin.FormActivate(Sender: TObject);
 var
   FConfig: TDynamicForm;
-  parametro:string;
+  Arq:TStringList;
 begin
-  parametro:=RaApplication.Application.GateQueryParams;
+  Arq := TStringList.Create;
+
+  Arq.Add(RaApplication.Application.GateQueryParams);
+  Arq.SaveToFile('peso.txt');
 
   FConfig := TDynamicForm.Create;
   FConfig.LoadSetting(Self);
   FConfig.Free;
+  Arq.Free;
 end;
 
 procedure TfrmLogin.showPrincipal;
