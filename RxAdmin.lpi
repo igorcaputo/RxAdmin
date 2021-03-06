@@ -21,21 +21,27 @@
       <FormatVersion Value="2"/>
       <Modes Count="0"/>
     </RunParams>
-    <RequiredPackages Count="4">
+    <RequiredPackages Count="6">
       <Item1>
-        <PackageName Value="RaudusX"/>
+        <PackageName Value="lazreportpdfexport"/>
       </Item1>
       <Item2>
-        <PackageName Value="RaudusFPC"/>
+        <PackageName Value="lr_pdfexport"/>
       </Item2>
       <Item3>
-        <PackageName Value="LCL"/>
+        <PackageName Value="RaudusX"/>
       </Item3>
       <Item4>
-        <PackageName Value="FCL"/>
+        <PackageName Value="RaudusFPC"/>
       </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="FCL"/>
+      </Item6>
     </RequiredPackages>
-    <Units Count="14">
+    <Units Count="18">
       <Unit0>
         <Filename Value="RxAdmin.pas"/>
         <IsPartOfProject Value="True"/>
@@ -93,6 +99,7 @@
         <Filename Value="src\core\untpesquisa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmPesquisa"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPesquisa"/>
       </Unit9>
@@ -123,6 +130,32 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
       </Unit13>
+      <Unit14>
+        <Filename Value="src\relatorio\untpreview.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPreview"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="untPreview"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="src\relatorio\untrelatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRelatorio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="untRelatorio"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="objGeradorRelatorio"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="src\core\libgeradorrelatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="libGeradorRelatorio"/>
+      </Unit17>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -133,7 +166,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir);pkg\dopf-master\core"/>
-      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity;src\core;src\cadastro"/>
+      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity;src\core;src\cadastro;src\relatorio"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       <SrcPath Value="C:\Raudus\bin\lazide\"/>
     </SearchPaths>

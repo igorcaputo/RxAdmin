@@ -4,14 +4,14 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="36">
+    <Units Count="41">
       <Unit0>
         <Filename Value="RxAdmin.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="49" Y="13"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit0>
       <Unit1>
         <Filename Value="src\core\untlogin.pas"/>
@@ -23,7 +23,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="33"/>
         <CursorPos X="60" Y="122"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit1>
       <Unit2>
         <Filename Value="src\core\uformdefault.pas"/>
@@ -34,7 +34,7 @@
         <UnitName Value="uFormDefault"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="39" Y="3"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="28"/>
       </Unit2>
       <Unit3>
         <Filename Value="src\core\untframedefault.pas"/>
@@ -45,7 +45,7 @@
         <UnitName Value="untFrameDefault"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="8"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="28"/>
       </Unit3>
       <Unit4>
         <Filename Value="src\entity\objmeulayout.pas"/>
@@ -54,17 +54,16 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="46"/>
         <CursorPos X="36" Y="52"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="28"/>
       </Unit4>
       <Unit5>
         <Filename Value="src\core\objdynamicform.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objDynamicForm"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
         <TopLine Value="215"/>
         <CursorPos Y="223"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -72,9 +71,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="objUsuario"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="65"/>
-        <CursorPos X="32"/>
-        <UsageCount Value="22"/>
+        <CursorPos Y="7"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
@@ -83,7 +81,7 @@
         <UnitName Value="Utils"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="65"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="26"/>
       </Unit7>
       <Unit8>
         <Filename Value="src\core\libbusca.pas"/>
@@ -92,7 +90,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="23"/>
         <CursorPos X="53" Y="39"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
@@ -102,10 +100,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPesquisa"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="189"/>
         <CursorPos X="34" Y="190"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit9>
@@ -116,7 +114,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="282"/>
         <CursorPos Y="291"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
       </Unit10>
       <Unit11>
         <Filename Value="src\core\untmeulayout.pas"/>
@@ -127,7 +125,7 @@
         <UnitName Value="untMeuLayout"/>
         <TopLine Value="78"/>
         <CursorPos Y="85"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit11>
       <Unit12>
@@ -138,7 +136,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="55" Y="121"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
       </Unit12>
       <Unit13>
         <Filename Value="src\cadastro\untusuario.pas"/>
@@ -149,10 +147,55 @@
         <EditorIndex Value="3"/>
         <TopLine Value="171"/>
         <CursorPos Y="189"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit13>
       <Unit14>
+        <Filename Value="src\relatorio\untpreview.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPreview"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="untPreview"/>
+        <EditorIndex Value="6"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="src\relatorio\untrelatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRelatorio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="untRelatorio"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="38"/>
+        <CursorPos X="41" Y="47"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="objGeradorRelatorio"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="153"/>
+        <CursorPos X="17" Y="248"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="src\core\libgeradorrelatorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="libGeradorRelatorio"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="39" Y="13"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
         <Filename Value="unit1.pas"/>
         <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
@@ -160,53 +203,53 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="41" Y="9"/>
         <UsageCount Value="20"/>
-      </Unit14>
-      <Unit15>
+      </Unit18>
+      <Unit19>
         <Filename Value="core\untframedefault.lfm"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="11"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit15>
-      <Unit16>
+      </Unit19>
+      <Unit20>
         <Filename Value="core\dbutils.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="75" Y="25"/>
         <UsageCount Value="11"/>
-      </Unit16>
-      <Unit17>
+      </Unit20>
+      <Unit21>
         <Filename Value="pkg\dopf-master\brokers\dsqldbbroker.pas"/>
         <UnitName Value="dSQLdbBroker"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="483"/>
         <CursorPos X="34" Y="492"/>
         <UsageCount Value="10"/>
-      </Unit17>
-      <Unit18>
+      </Unit21>
+      <Unit22>
         <Filename Value="pkg\dopf-master\core\dopf.pas"/>
         <UnitName Value="dOpf"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="14"/>
         <UsageCount Value="10"/>
-      </Unit18>
-      <Unit19>
+      </Unit22>
+      <Unit23>
         <Filename Value="C:\lazarus-2.0.2\fpc\3.0.4\source\rtl\win\sysutils.pp"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-      </Unit19>
-      <Unit20>
+      </Unit23>
+      <Unit24>
         <Filename Value="pkg\dopf-master\core\dopf.inc"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-      </Unit20>
-      <Unit21>
+      </Unit24>
+      <Unit25>
         <Filename Value="pkg\dopf-master\core\dsqlbuilder.pas"/>
         <UnitName Value="dSqlBuilder"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="44"/>
         <UsageCount Value="10"/>
-      </Unit21>
-      <Unit22>
+      </Unit25>
+      <Unit26>
         <Filename Value="core\untlogin1.pas"/>
         <ComponentName Value="frmLogin1"/>
         <HasResources Value="True"/>
@@ -215,8 +258,8 @@
         <TopLine Value="37"/>
         <CursorPos X="45" Y="48"/>
         <UsageCount Value="20"/>
-      </Unit22>
-      <Unit23>
+      </Unit26>
+      <Unit27>
         <Filename Value="..\..\SysBlockAD\principal\untlogin.pas"/>
         <ComponentName Value="frmLogin"/>
         <HasResources Value="True"/>
@@ -225,71 +268,71 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="124"/>
         <UsageCount Value="10"/>
-      </Unit23>
-      <Unit24>
+      </Unit27>
+      <Unit28>
         <Filename Value="core\config.pas"/>
         <UnitName Value="Config"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <UsageCount Value="10"/>
-      </Unit24>
-      <Unit25>
+      </Unit28>
+      <Unit29>
         <Filename Value="C:\lazarus-2.0.2\lcl\forms.pp"/>
         <UnitName Value="Forms"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="8"/>
         <CursorPos X="11" Y="21"/>
         <UsageCount Value="10"/>
-      </Unit25>
-      <Unit26>
+      </Unit29>
+      <Unit30>
         <Filename Value="..\..\MobbERP\trunk\principal\untprincipal.pas"/>
         <ComponentName Value="frmPrincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-      </Unit26>
-      <Unit27>
+      </Unit30>
+      <Unit31>
         <Filename Value="..\..\MobbERP\trunk\principal\untprincipal.lfm"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="765"/>
         <CursorPos X="4" Y="783"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit27>
-      <Unit28>
+      </Unit31>
+      <Unit32>
         <Filename Value="core\untprincipal.lfm"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="11"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit28>
-      <Unit29>
+      </Unit32>
+      <Unit33>
         <Filename Value="src\core\untmeulayout.lfm"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="48" Y="10"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit29>
-      <Unit30>
+      </Unit33>
+      <Unit34>
         <Filename Value="C:\lazarus-2.0.2\lcl\include\control.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3938"/>
         <CursorPos Y="3947"/>
         <UsageCount Value="10"/>
-      </Unit30>
-      <Unit31>
+      </Unit34>
+      <Unit35>
         <Filename Value="src\core\untlogin.lfm"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit31>
-      <Unit32>
+      </Unit35>
+      <Unit36>
         <Filename Value="src\core\dbutils.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <UsageCount Value="10"/>
-      </Unit32>
-      <Unit33>
+      </Unit36>
+      <Unit37>
         <Filename Value="src\cadastro\untusuario1.lfm"/>
         <ComponentName Value="frmUsuario1"/>
         <HasResources Value="True"/>
@@ -298,8 +341,8 @@
         <CursorPos X="18" Y="7"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit33>
-      <Unit34>
+      </Unit37>
+      <Unit38>
         <Filename Value="..\..\MobbERP\trunk\core\untlogin1.pas"/>
         <ComponentName Value="frmLogin1"/>
         <HasResources Value="True"/>
@@ -308,17 +351,27 @@
         <TopLine Value="116"/>
         <CursorPos Y="119"/>
         <UsageCount Value="10"/>
-      </Unit34>
-      <Unit35>
+      </Unit38>
+      <Unit39>
         <Filename Value="src\cadastro\untusuario.lfm"/>
         <EditorIndex Value="4"/>
         <CursorPos Y="8"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit35>
+      </Unit39>
+      <Unit40>
+        <Filename Value="src\core\config.pas"/>
+        <UnitName Value="Config"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="57"/>
+        <CursorPos X="54" Y="70"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit40>
     </Units>
-    <JumpHistory Count="6" HistoryIndex="5">
+    <JumpHistory Count="23" HistoryIndex="22">
       <Position1>
         <Filename Value="src\core\libbusca.pas"/>
         <Caret Line="142" TopLine="136"/>
@@ -343,6 +396,72 @@
         <Filename Value="src\cadastro\untusuario.lfm"/>
         <Caret Line="8"/>
       </Position6>
+      <Position7>
+        <Filename Value="src\relatorio\untrelatorio.pas"/>
+      </Position7>
+      <Position8>
+        <Filename Value="src\relatorio\untrelatorio.pas"/>
+        <Caret Line="9" Column="54"/>
+      </Position8>
+      <Position9>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+      </Position9>
+      <Position10>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="13" Column="32"/>
+      </Position10>
+      <Position11>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="24" Column="6" TopLine="16"/>
+      </Position11>
+      <Position12>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="13" Column="32"/>
+      </Position12>
+      <Position13>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="36" Column="28" TopLine="27"/>
+      </Position13>
+      <Position14>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="46" Column="6" TopLine="38"/>
+      </Position14>
+      <Position15>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="59" Column="29" TopLine="47"/>
+      </Position15>
+      <Position16>
+        <Filename Value="src\relatorio\untrelatorio.pas"/>
+        <Caret Line="47" Column="20" TopLine="5"/>
+      </Position16>
+      <Position17>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="100" Column="3" TopLine="84"/>
+      </Position17>
+      <Position18>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="248" TopLine="230"/>
+      </Position18>
+      <Position19>
+        <Filename Value="src\core\libgeradorrelatorio.pas"/>
+        <Caret Line="12" Column="51"/>
+      </Position19>
+      <Position20>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="248" Column="17" TopLine="153"/>
+      </Position20>
+      <Position21>
+        <Filename Value="src\core\libgeradorrelatorio.pas"/>
+        <Caret Line="6" Column="32"/>
+      </Position21>
+      <Position22>
+        <Filename Value="src\core\libgeradorrelatorio.pas"/>
+        <Caret Line="13" Column="39"/>
+      </Position22>
+      <Position23>
+        <Filename Value="src\entity\objgeradorrelatorio.pas"/>
+        <Caret Line="248" Column="17" TopLine="153"/>
+      </Position23>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
