@@ -1,34 +1,33 @@
 inherited frmMeuLayout: TfrmMeuLayout
-  Height = 647
-  Width = 1138
-  ClientHeight = 647
-  ClientWidth = 1138
-  DesignLeft = 119
-  DesignTop = 76
+  Height = 508
+  Width = 1027
+  ClientHeight = 508
+  ClientWidth = 1027
+  DesignLeft = 365
+  DesignTop = 53
   inherited Container: TRaPanel
-    Height = 614
-    Width = 1138
-    ClientWidth = 1138
-    ClientHeight = 614
+    Height = 475
+    Width = 1027
+    ClientWidth = 1027
+    ClientHeight = 475
     object pnlMeuLayout: TRaPanel[0]
-      Left = 0
-      Height = 614
-      Top = 0
-      Width = 1138
-      Align = alClient
+      Left = 8
+      Height = 440
+      Top = 8
+      Width = 1000
       BevelInner = bvLowered
-      ClientWidth = 1138
-      ClientHeight = 614
+      ClientWidth = 1000
+      ClientHeight = 440
       TabOrder = 0
       object RaTabControl1: TRaTabControl
-        Left = 24
-        Height = 625
-        Top = 8
-        Width = 1094
-        ActiveTab = tbsTelaLogin
+        Left = 32
+        Height = 392
+        Top = 24
+        Width = 936
+        ActiveTab = tbsTelaNavegacao
         Anchors = [akTop, akLeft, akRight]
-        ClientWidth = 1094
-        ClientHeight = 625
+        ClientWidth = 936
+        ClientHeight = 392
         UI = 'cupertino'
         object tbsTelaLogin: TRaTabSheet
           Title.Caption = 'Tela de login'
@@ -930,9 +929,9 @@ inherited frmMeuLayout: TfrmMeuLayout
           Title.Width = 100
           UI = 'cupertino'
           object btnAreaTrabalho_cfg: TRaPanel
-            Left = 400
+            Left = 424
             Height = 311
-            Top = 80
+            Top = 40
             Width = 470
             ClientWidth = 470
             ClientHeight = 311
@@ -1191,18 +1190,18 @@ inherited frmMeuLayout: TfrmMeuLayout
             end
           end
           object ckbMenuLado: TRaCheckBox
-            Left = 400
+            Left = 424
             Height = 18
-            Top = 40
+            Top = 0
             Width = 121
             Caption = 'Menu ao lado direito'
             TabOrder = 2
             OnClick = ckbMenuLadoClick
           end
           object ckbMenuBaixo: TRaCheckBox
-            Left = 400
+            Left = 424
             Height = 18
-            Top = 56
+            Top = 16
             Width = 121
             Caption = 'Menu a baixo'
             TabOrder = 2
@@ -1215,9 +1214,9 @@ inherited frmMeuLayout: TfrmMeuLayout
         end
       end
       object RaOverlay1: TRaOverlay
-        Left = 248
+        Left = 312
         Height = 128
-        Top = 352
+        Top = 224
         Width = 88
         ClientWidth = 88
         ClientHeight = 128

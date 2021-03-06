@@ -65,6 +65,7 @@ type
     procedure btnListaCliente2Click(Sender: TObject);
     procedure btnListaCliente3Click(Sender: TObject);
     procedure btnMudarCor(Sender: TObject);
+    procedure ckbMenuBaixoClick(Sender: TObject);
     procedure lblCorFonteAjaxRequest(Sender: TComponent; EventName: string;
       Params: TRaStrings);
     procedure lblCorFundoAjaxRequest(Sender: TComponent; EventName: string;
@@ -165,6 +166,8 @@ begin
   txtCaption := StringReplace(txtCaption, '#idControl',IntToStr(idControl), [rfReplaceAll]);
   lblCorFonte.Caption := txtCaption;
 
+ // pnlMeuLayout.Left := Round((pnlMeuLayout.Width - RaApplication.Application.ScreenWidth) / 2);
+
   loadSetting;
 end;
 
@@ -219,6 +222,15 @@ begin
   RaOverlay1.Left := RaApplication.Application.EventRectangle.Left + Login.Width;
   RaOverlay1.Top := RaApplication.Application.EventRectangle.Top;
   RaOverlay1.Show;
+end;
+
+procedure TfrmMeuLayout.ckbMenuBaixoClick(Sender: TObject);
+begin
+  ckbMenuLado.checked := not ckbMenuBaixo.checked;
+  ckbMenuBaixo.checked := ckbMenuLado.checked;
+
+  MenuLado_cfg.Visible := ckbMenuLado.checked;
+  Menu_cfg.Visible:= ckbMenuBaixo.checked;
 end;
 
 procedure TfrmMeuLayout.lblCorFonteAjaxRequest(Sender: TComponent;
