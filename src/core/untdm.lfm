@@ -1,0 +1,70 @@
+object Dm: TDm
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 352
+  HorizontalOffset = 504
+  VerticalOffset = 268
+  Width = 705
+  PPI = 96
+  object frTNPDFExport1: TfrTNPDFExport
+    left = 368
+    top = 40
+  end
+  object frReport1: TfrReport
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    ModalPreview = False
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    ShowProgress = False
+    DataType = dtDataSet
+    left = 328
+    top = 40
+  end
+  object lrCrossObject1: TlrCrossObject
+    left = 328
+    top = 80
+  end
+  object frBarCodeObject1: TfrBarCodeObject
+    left = 368
+    top = 120
+  end
+  object frShapeObject1: TfrShapeObject
+    left = 328
+    top = 120
+  end
+  object frRoundRectObject1: TfrRoundRectObject
+    left = 408
+    top = 80
+  end
+  object frCheckBoxObject1: TfrCheckBoxObject
+    left = 408
+    top = 120
+  end
+  object frTextExport1: TfrTextExport
+    ShowExportParamsDlg = False
+    left = 368
+    top = 80
+  end
+  object frDBDataSet1: TfrDBDataSet
+    OnCheckEOF = frDBDataSet1CheckEOF
+    left = 152
+    top = 40
+  end
+  object frCSVExport1: TfrCSVExport
+    left = 408
+    top = 40
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 152
+    top = 104
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    DataSource = DataSource1
+    left = 152
+    top = 144
+  end
+end
