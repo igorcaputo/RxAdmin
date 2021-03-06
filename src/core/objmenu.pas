@@ -303,7 +303,7 @@ begin
     begin
       vSubMenu := TRaOverlay.Create(Form);
       vSubMenu.Parent :=  Form;
-      vSubMenu.Width := 179;
+      vSubMenu.Width := 300;
       vSubMenu.Height := 0;
       vSubMenu.Name := sMenu;
 

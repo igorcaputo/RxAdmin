@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="30" Y="12"/>
-        <UsageCount Value="36"/>
+        <UsageCount Value="39"/>
       </Unit0>
       <Unit1>
         <Filename Value="src\core\untlogin.pas"/>
@@ -21,7 +21,7 @@
         <UnitName Value="untLogin"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="38" Y="16"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="33"/>
       </Unit1>
       <Unit2>
         <Filename Value="src\core\uformdefault.pas"/>
@@ -32,7 +32,7 @@
         <UnitName Value="uFormDefault"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="39" Y="3"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="38"/>
       </Unit2>
       <Unit3>
         <Filename Value="src\core\untframedefault.pas"/>
@@ -43,7 +43,7 @@
         <UnitName Value="untFrameDefault"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="31" Y="13"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="38"/>
       </Unit3>
       <Unit4>
         <Filename Value="src\entity\objmeulayout.pas"/>
@@ -52,17 +52,16 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="46"/>
         <CursorPos X="36" Y="52"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="38"/>
       </Unit4>
       <Unit5>
         <Filename Value="src\core\objdynamicform.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objDynamicForm"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="2"/>
         <CursorPos X="56" Y="227"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="36"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -72,7 +71,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="65"/>
         <CursorPos X="24" Y="81"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="33"/>
       </Unit6>
       <Unit7>
         <Filename Value="src\core\utils.pas"/>
@@ -80,7 +79,7 @@
         <UnitName Value="Utils"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="65"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="36"/>
       </Unit7>
       <Unit8>
         <Filename Value="src\core\libbusca.pas"/>
@@ -89,7 +88,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="53" Y="39"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="36"/>
       </Unit8>
       <Unit9>
         <Filename Value="src\core\untpesquisa.pas"/>
@@ -100,16 +99,16 @@
         <UnitName Value="untPesquisa"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="32" Y="184"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="36"/>
       </Unit9>
       <Unit10>
         <Filename Value="src\core\objmenu.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objMenu"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="402"/>
-        <CursorPos X="28" Y="419"/>
-        <UsageCount Value="32"/>
+        <TopLine Value="393"/>
+        <CursorPos X="23" Y="398"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit10>
       <Unit11>
@@ -122,7 +121,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="78"/>
         <CursorPos Y="85"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="35"/>
       </Unit11>
       <Unit12>
         <Filename Value="src\core\untprincipal.pas"/>
@@ -130,10 +129,13 @@
         <ComponentName Value="frmPrincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="113"/>
-        <CursorPos Y="158"/>
-        <UsageCount Value="31"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="93"/>
+        <CursorPos X="3" Y="100"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit12>
       <Unit13>
         <Filename Value="src\cadastro\untusuario.pas"/>
@@ -143,7 +145,7 @@
         <ResourceBaseClass Value="Frame"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="62" Y="5"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="31"/>
       </Unit13>
       <Unit14>
         <Filename Value="src\relatorio\untpreview.pas"/>
@@ -153,7 +155,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPreview"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="31"/>
       </Unit14>
       <Unit15>
         <Filename Value="src\relatorio\untrelatorio.pas"/>
@@ -164,7 +166,7 @@
         <UnitName Value="untRelatorio"/>
         <TopLine Value="197"/>
         <CursorPos X="39" Y="280"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit15>
@@ -175,7 +177,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="91"/>
         <CursorPos X="5" Y="133"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="31"/>
       </Unit16>
       <Unit17>
         <Filename Value="src\core\libgeradorrelatorio.pas"/>
@@ -184,7 +186,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <CursorPos X="217" Y="14"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="31"/>
       </Unit17>
       <Unit18>
         <Filename Value="src\core\untdm.pas"/>
@@ -193,7 +195,7 @@
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="untDm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="30"/>
       </Unit18>
       <Unit19>
         <Filename Value="src\entity\objbusca.pas"/>
@@ -202,7 +204,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="18"/>
         <CursorPos Y="35"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="30"/>
       </Unit19>
       <Unit20>
         <Filename Value="unit1.pas"/>
@@ -240,7 +242,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1303"/>
         <CursorPos Y="1313"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit24>
       <Unit25>
         <Filename Value="C:\lazarus-2.0.2\fpc\3.0.4\source\rtl\win\sysutils.pp"/>
@@ -341,7 +343,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="16"/>
         <CursorPos X="10" Y="10"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit38>
       <Unit39>
@@ -403,129 +405,129 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="19"/>
-        <UsageCount Value="26"/>
+        <UsageCount Value="29"/>
       </Unit45>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="312" TopLine="309"/>
+        <Caret Line="313" TopLine="309"/>
       </Position1>
       <Position2>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="313" TopLine="309"/>
+        <Caret Line="314" TopLine="309"/>
       </Position2>
       <Position3>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="314" TopLine="309"/>
+        <Caret Line="311" TopLine="308"/>
       </Position3>
       <Position4>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="311" TopLine="308"/>
+        <Caret Line="338" TopLine="329"/>
       </Position4>
       <Position5>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="338" TopLine="329"/>
+        <Caret Line="300" TopLine="291"/>
       </Position5>
       <Position6>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="300" TopLine="291"/>
+        <Caret Line="302" TopLine="291"/>
       </Position6>
       <Position7>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="302" TopLine="291"/>
+        <Caret Line="318" TopLine="309"/>
       </Position7>
       <Position8>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="318" TopLine="309"/>
+        <Caret Line="319" TopLine="309"/>
       </Position8>
       <Position9>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="319" TopLine="309"/>
+        <Caret Line="329" TopLine="320"/>
       </Position9>
       <Position10>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="329" TopLine="320"/>
+        <Caret Line="330" TopLine="320"/>
       </Position10>
       <Position11>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="330" TopLine="320"/>
+        <Caret Line="333" TopLine="320"/>
       </Position11>
       <Position12>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="333" TopLine="320"/>
+        <Caret Line="338" TopLine="329"/>
       </Position12>
       <Position13>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="338" TopLine="329"/>
+        <Caret Line="340" TopLine="329"/>
       </Position13>
       <Position14>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="340" TopLine="329"/>
+        <Caret Line="341" TopLine="329"/>
       </Position14>
       <Position15>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="341" TopLine="329"/>
+        <Caret Line="332" Column="83" TopLine="323"/>
       </Position15>
       <Position16>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="332" Column="83" TopLine="323"/>
+        <Caret Line="302" TopLine="293"/>
       </Position16>
       <Position17>
-        <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="302" TopLine="293"/>
+        <Filename Value="src\relatorio\untrelatorio.pas"/>
+        <Caret Line="67" TopLine="62"/>
       </Position17>
       <Position18>
         <Filename Value="src\relatorio\untrelatorio.pas"/>
-        <Caret Line="67" TopLine="62"/>
+        <Caret Line="214" Column="30" TopLine="203"/>
       </Position18>
       <Position19>
         <Filename Value="src\relatorio\untrelatorio.pas"/>
-        <Caret Line="214" Column="30" TopLine="203"/>
+        <Caret Line="127" TopLine="117"/>
       </Position19>
       <Position20>
-        <Filename Value="src\relatorio\untrelatorio.pas"/>
-        <Caret Line="127" TopLine="117"/>
+        <Filename Value="src\core\objmenu.pas"/>
+        <Caret Line="372" Column="53" TopLine="358"/>
       </Position20>
       <Position21>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="372" Column="53" TopLine="358"/>
+        <Caret Line="74" Column="43" TopLine="71"/>
       </Position21>
       <Position22>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="74" Column="43" TopLine="71"/>
+        <Caret Line="411" Column="33" TopLine="403"/>
       </Position22>
       <Position23>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="411" Column="33" TopLine="403"/>
+        <Caret Line="344" Column="39" TopLine="342"/>
       </Position23>
       <Position24>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="344" Column="39" TopLine="342"/>
+        <Caret Line="68" Column="43" TopLine="68"/>
       </Position24>
       <Position25>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="68" Column="43" TopLine="68"/>
+        <Caret Line="344" Column="66" TopLine="338"/>
       </Position25>
       <Position26>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="344" Column="66" TopLine="338"/>
+        <Caret Line="68" Column="70" TopLine="68"/>
       </Position26>
       <Position27>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="68" Column="70" TopLine="68"/>
+        <Caret Line="359" Column="27" TopLine="345"/>
       </Position27>
       <Position28>
         <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="359" Column="27" TopLine="345"/>
+        <Caret Line="368" Column="46" TopLine="353"/>
       </Position28>
       <Position29>
-        <Filename Value="src\core\objmenu.pas"/>
-        <Caret Line="368" Column="46" TopLine="353"/>
-      </Position29>
-      <Position30>
         <Filename Value="src\relatorio\untrelatorio.pas"/>
         <Caret Line="280" Column="39" TopLine="197"/>
+      </Position29>
+      <Position30>
+        <Filename Value="src\core\untprincipal.pas"/>
+        <Caret Line="116" Column="65" TopLine="112"/>
       </Position30>
     </JumpHistory>
     <RunParams>

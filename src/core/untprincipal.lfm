@@ -342,11 +342,13 @@ object frmPrincipal: TfrmPrincipal
     end
   end
   object RaOverlay1: TRaOverlay
-    Left = 208
+    Left = 200
     Height = 218
-    Top = 248
-    Width = 216
+    Top = 88
+    Width = 256
+    Color = 4273449
     TabOrder = 5
+    UI = 'cupertino'
   end
   object RaIntervalTimer1: TRaIntervalTimer
     OnTick = RaIntervalTimer1Tick
