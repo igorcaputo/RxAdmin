@@ -1,0 +1,237 @@
+inherited frmControlePostagem: TfrmControlePostagem
+  Height = 515
+  Width = 815
+  ClientHeight = 515
+  ClientWidth = 815
+  DesignLeft = 270
+  DesignTop = 107
+  inherited Container: TRaPanel
+    Height = 482
+    Width = 815
+    ClientWidth = 815
+    ClientHeight = 482
+    object RaPanel1: TRaPanel[0]
+      Left = 16
+      Height = 466
+      Top = 8
+      Width = 788
+      Anchors = [akRight, akBottom]
+      BevelInner = bvLowered
+      ClientWidth = 788
+      ClientHeight = 466
+      TabOrder = 0
+      object RaPanel2: TRaPanel
+        Left = 8
+        Height = 96
+        Top = 296
+        Width = 769
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BevelInner = bvLowered
+        ClientWidth = 769
+        ClientHeight = 96
+        TabOrder = 0
+        object edtPeso: TRaEdit
+          Left = 184
+          Height = 21
+          Top = 57
+          Width = 212
+          TabOrder = 1
+          UI = 'cupertino'
+        end
+        object RaEdit5: TRaEdit
+          Left = 184
+          Height = 21
+          Top = 24
+          Width = 532
+          TabOrder = 1
+          UI = 'cupertino'
+        end
+        object RaLabel6: TRaLabel
+          Left = 16
+          Height = 21
+          Top = 57
+          Width = 55
+          Font.Height = -20
+          ParentColor = False
+          ParentFont = False
+          Caption = 'Peso'
+        end
+        object RaLabel7: TRaLabel
+          Left = 16
+          Height = 32
+          Top = 24
+          Width = 152
+          Font.Height = -20
+          ParentColor = False
+          ParentFont = False
+          Caption = 'Código de barras'
+        end
+      end
+      object RaPanel3: TRaPanel
+        Left = 8
+        Height = 285
+        Top = 8
+        Width = 769
+        BevelInner = bvLowered
+        ClientWidth = 769
+        ClientHeight = 285
+        TabOrder = 1
+        object edtDtFechamento: TRaEdit
+          Left = 168
+          Height = 21
+          Top = 136
+          Width = 132
+          Color = clActiveBorder
+          TabOrder = 1
+          UI = 'cupertino'
+          ReadOnly = True
+        end
+        object RaEdit4: TRaEdit
+          Left = 168
+          Height = 21
+          Top = 160
+          Width = 132
+          Color = clActiveBorder
+          TabOrder = 1
+          UI = 'cupertino'
+          ReadOnly = True
+        end
+        object edtDtInicio: TRaEdit
+          Left = 168
+          Height = 21
+          Top = 112
+          Width = 132
+          Color = clActiveBorder
+          TabOrder = 1
+          UI = 'cupertino'
+          ReadOnly = True
+        end
+        object edtNrProcesso: TRaEdit
+          Left = 168
+          Height = 21
+          Top = 88
+          Width = 132
+          Color = clHighlight
+          Font.Color = 16744448
+          ParentFont = False
+          TabOrder = 0
+          UI = 'cupertino'
+          ReadOnly = True
+        end
+        object RxTickCross1: TRxTickCross
+          Left = 344
+          Height = 168
+          Top = 48
+          Width = 168
+          Checked = False
+        end
+        object lblProcesso: TRaLabel
+          Left = 8
+          Height = 21
+          Top = 88
+          Width = 104
+          Font.Height = -20
+          ParentColor = False
+          ParentFont = False
+          Caption = 'Processo'
+        end
+        object lblHrInicio: TRaLabel
+          Left = 8
+          Height = 21
+          Top = 112
+          Width = 104
+          Font.Height = -20
+          ParentColor = False
+          ParentFont = False
+          Caption = 'Hora início'
+        end
+        object RaLabel3: TRaLabel
+          Left = 8
+          Height = 21
+          Top = 136
+          Width = 160
+          Font.Height = -20
+          ParentColor = False
+          ParentFont = False
+          Caption = 'Hora fechamento'
+        end
+        object RaLabel4: TRaLabel
+          Left = 8
+          Height = 32
+          Top = 160
+          Width = 145
+          Font.Height = -20
+          ParentColor = False
+          ParentFont = False
+          Caption = 'Registros lidos'
+        end
+        object RaPanel4: TRaPanel
+          Left = 576
+          Height = 285
+          Top = 0
+          Width = 193
+          Align = alRight
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BevelInner = bvLowered
+          ClientWidth = 193
+          ClientHeight = 285
+          TabOrder = 0
+          object RaLabel5: TRaLabel
+            Left = 26
+            Height = 113
+            Top = 72
+            Width = 144
+            Font.Height = -107
+            ParentColor = False
+            ParentFont = False
+            Caption = 'XX'
+          end
+        end
+      end
+      object btnGravar: TRaButton
+        Left = 288
+        Height = 32
+        Top = 416
+        Width = 131
+        Anchors = []
+        Caption = 'Iniciar'
+        Color = 8237426
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = 'Century Gothic'
+        ParentFont = False
+        TabOrder = 1
+        UI = 'simple'
+        OnClick = btnGravarClick
+      end
+      object btnExcluir: TRaButton
+        Left = 420
+        Height = 32
+        Top = 416
+        Width = 120
+        Anchors = []
+        Caption = 'Finalizar'
+        Color = 4212963
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = 'Century Gothic'
+        ParentFont = False
+        TabOrder = 1
+        UI = 'simple'
+        OnClick = btnExcluirClick
+      end
+    end
+  end
+  object RaApplicationEvents1: TRaApplicationEvents[2]
+    OnScreenResize = RaApplicationEvents1ScreenResize
+    left = 96
+    top = 280
+  end
+  object RaIntervalTimer1: TRaIntervalTimer[3]
+    OnTick = RaIntervalTimer1Tick
+    left = 608
+    top = 64
+  end
+end
