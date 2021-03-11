@@ -8,9 +8,11 @@
       <Unit0>
         <Filename Value="RxAdmin.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="30" Y="12"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="7"/>
+        <CursorPos X="50" Y="16"/>
         <UsageCount Value="44"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="src\core\untlogin.pas"/>
@@ -127,10 +129,10 @@
         <ComponentName Value="frmPrincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="102"/>
-        <CursorPos X="45" Y="107"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="54" Y="9"/>
         <UsageCount Value="39"/>
+        <Loaded Value="True"/>
       </Unit12>
       <Unit13>
         <Filename Value="src\cadastro\untusuario.pas"/>
@@ -170,10 +172,11 @@
         <Filename Value="src\entity\objgeradorrelatorio.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="objGeradorRelatorio"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="91"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="5" Y="133"/>
         <UsageCount Value="36"/>
+        <Loaded Value="True"/>
       </Unit16>
       <Unit17>
         <Filename Value="src\core\libgeradorrelatorio.pas"/>
@@ -258,7 +261,6 @@
       <Unit26>
         <Filename Value="pkg\dopf-master\core\dopf.pas"/>
         <UnitName Value="dOpf"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="339"/>
         <CursorPos X="5" Y="347"/>
@@ -442,31 +444,27 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit48>
     </Units>
-    <JumpHistory Count="6" HistoryIndex="5">
+    <JumpHistory Count="5" HistoryIndex="4">
       <Position1>
-        <Filename Value="src\cadastro\untusuario.pas"/>
-        <Caret Line="5" Column="62" TopLine="94"/>
+        <Filename Value="pkg\dopf-master\core\dopf.pas"/>
+        <Caret Line="431" Column="15" TopLine="424"/>
       </Position1>
       <Position2>
         <Filename Value="pkg\dopf-master\core\dopf.pas"/>
-        <Caret Line="431" Column="15" TopLine="424"/>
+        <Caret Line="2062" Column="3" TopLine="2058"/>
       </Position2>
       <Position3>
         <Filename Value="pkg\dopf-master\core\dopf.pas"/>
-        <Caret Line="2062" Column="3" TopLine="2058"/>
+        <Caret Line="393" Column="15" TopLine="384"/>
       </Position3>
       <Position4>
-        <Filename Value="src\cadastro\untusuario.pas"/>
-        <Caret Line="5" Column="62" TopLine="97"/>
-      </Position4>
-      <Position5>
-        <Filename Value="pkg\dopf-master\core\dopf.pas"/>
-        <Caret Line="393" Column="15" TopLine="384"/>
-      </Position5>
-      <Position6>
         <Filename Value="pkg\dopf-master\core\dopf.pas"/>
         <Caret Line="1980" Column="3" TopLine="1976"/>
-      </Position6>
+      </Position4>
+      <Position5>
+        <Filename Value="src\core\untprincipal.pas"/>
+        <Caret Line="9" Column="54"/>
+      </Position5>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

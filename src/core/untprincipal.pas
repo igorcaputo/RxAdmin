@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Forms, StdCtrls, ExtCtrls, FileUtil, LResources, ExtDlgs, Menus,
   RxExtDatePicker, RxTinyMCE, RxPublisherView, RxTickCross, RxTheme,
-  RxJqDatePicker, uBootStrapEdit, untFrameDefault, uFormDefault,
+  RxJqDatePicker, untFrameDefault, uFormDefault,
   dSQLdbBroker, objMenu, objDynamicForm,
   TypInfo;
 

@@ -193,7 +193,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir);pkg\dopf-master\core"/>
-      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity;src\core;src\cadastro;src\relatorio;src\processo"/>
+      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;src\entity;src\core;src\cadastro;src\relatorio;src\processo"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       <SrcPath Value="C:\Raudus\bin\lazide\"/>
     </SearchPaths>
