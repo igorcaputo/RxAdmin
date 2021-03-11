@@ -41,7 +41,7 @@
         <PackageName Value="FCL"/>
       </Item6>
     </RequiredPackages>
-    <Units Count="21">
+    <Units Count="22">
       <Unit0>
         <Filename Value="RxAdmin.pas"/>
         <IsPartOfProject Value="True"/>
@@ -176,6 +176,13 @@
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="untRelatorio1"/>
       </Unit20>
+      <Unit21>
+        <Filename Value="src\processo\untcontrolepostagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmControlePostagem"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="untControlePostagem"/>
+      </Unit21>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -186,7 +193,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir);pkg\dopf-master\core"/>
-      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity;src\core;src\cadastro;src\relatorio"/>
+      <OtherUnitFiles Value="pkg\dopf-master\brokers;pkg\dopf-master\core;core;src\entity;src\core;src\cadastro;src\relatorio;src\processo"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
       <SrcPath Value="C:\Raudus\bin\lazide\"/>
     </SearchPaths>

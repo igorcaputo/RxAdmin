@@ -7,7 +7,8 @@ uses
   Interfaces, RaApplication, RaudusX, lazreportpdfexport, RaApplicationExe,
   RaConfig, untLogin, Utils, libBusca, untPesquisa, objMenu, untMeuLayout,
   objUsuario, objGeradorRelatorio, objBusca, untprincipal, libGeradorRelatorio,
-  untDm, untusuario, untRelatorio, untPreview, untRelatorio1;
+  untDm, untusuario, untRelatorio, untPreview, untRelatorio1,
+  untControlePostagem;
 
 begin
   WriteLn('http://localhost:8080/ - open in browser');
