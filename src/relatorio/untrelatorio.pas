@@ -1,5 +1,5 @@
 unit untRelatorio;
-
+//
 {$mode objfpc}{$H+}
 
 interface
@@ -189,7 +189,7 @@ var
   con, conAux: TdSQLdbConnector;
   qry, qryAux: TdSQLdbQuery;
   VRelatorio: TRelatorio;
-  VConsulta:TRelConsulta;
+  //VConsulta:TRelConsulta;
 
   SuperOwner: TComponent;
   i: integer;
@@ -199,13 +199,13 @@ var
   arqpdf: string;
   RxPublisherView1: TRxPublisherView;
   RaStreamPublisher1: TRaStreamPublisher;
-
+  FPublisherLink : TRaPublisherLink;
 begin
   con := dbutils.con;
   conAux := dbutils.con;
   qryAux := TdSQLdbQuery.Create(conAux);
   VRelatorio := TRelatorio.Create;
-  VConsulta:= TRelConsulta.Create;
+ // VConsulta:= TRelConsulta.Create;
 
   try
     conAux.Connect;
@@ -275,13 +275,11 @@ begin
     WriteLn(qry.SQL.Text);
     qry.Next;
   end;
-  RxPublisherView1 := TRxPublisherView.Create(Owner);
-  RaStreamPublisher1 := TRaStreamPublisher.Create(Owner);
   app := ExtractFilePath(ParamStr(0));
 {$IFDEF UNIX}
   app := '/home/Mobb/Relatorio/';
 {$ENDIF}
-  RaStreamPublisher1.Stream.Free;
+
   arqpdf := formatdatetime('ddmmyyyhhmmss', now) + '_' + 'SaldoSeparacao.pdf';
   RaStreamPublisher1.DownloadName := arqpdf;
 
@@ -291,14 +289,40 @@ begin
   //Synchronize(@Dm.frReport1.PrepareReport);
   Dm.frReport1.ExportTo(TFrTNPDFExportFilter, app +'tmp\'+ arqpdf);
 
+  {todo cristiano}
+  qry.close;
+  qry.free;
+  qryAux.close;
+  qryAux.free;
+
+  VRelatorio.free;
+  //VConsulta:= TRelConsulta.Create;
   appFile := TFileStream.Create(app +'tmp\'+ arqpdf, fmOpenRead);
 
-  RaStreamPublisher1.Stream := appFile;
-  RxPublisherView1.kind := pvkIFRAME;
-  RxPublisherView1.publisher := RaStreamPublisher1;
+  {todo cristiano   }
+{$IFDEF ENBARCADO}
+    RxPublisherView1 :=   frmPreview.RxPublisherView1; //TRxPublisherView.Create(Owner);//
+    RaStreamPublisher1 :=  frmPreview.RaStreamPublisher1;//TRaStreamPublisher.Create(Owner);  //
+    RaStreamPublisher1.Stream.Free;
+{$ELSE}
+    RaStreamPublisher1 :=   TRaStreamPublisher.Create(Owner);
+{$ENDIF}
 
-  frmPreview.RaStreamPublisher1 := RaStreamPublisher1;
-  frmPreview.Show;
+   RaStreamPublisher1.Stream := appFile;
+
+{$IFDEF ENBARCADO}
+   RxPublisherView1.kind := pvkIFRAME;
+   RxPublisherView1.publisher := RaStreamPublisher1;
+   frmPreview.RaStreamPublisher1 := RaStreamPublisher1;
+   frmPreview.Show;
+{$ELSE}
+    {todo cristiano}
+    FPublisherLink := TRaPublisherLink.Create;
+    FPublisherLink.Publisher := RaStreamPublisher1;
+    RaApplication.Application.BrowserWindowOpen(FPublisherLink.Publisher.URL);
+{$ENDIF}
+
+
 end;
 
 procedure TfrmRelatorio.CriaLabel(ANome, ACaption, AVisible: string;

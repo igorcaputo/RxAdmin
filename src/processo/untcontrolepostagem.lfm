@@ -3,8 +3,8 @@ inherited frmControlePostagem: TfrmControlePostagem
   Width = 815
   ClientHeight = 515
   ClientWidth = 815
-  DesignLeft = 270
-  DesignTop = 107
+  DesignLeft = 288
+  DesignTop = 89
   inherited Container: TRaPanel
     Height = 482
     Width = 815
@@ -38,13 +38,17 @@ inherited frmControlePostagem: TfrmControlePostagem
           TabOrder = 1
           UI = 'cupertino'
         end
-        object RaEdit5: TRaEdit
+        object edtCodBarra: TRaEdit
           Left = 184
           Height = 21
           Top = 24
           Width = 532
           TabOrder = 1
           UI = 'cupertino'
+          OnEnter = edtCodBarraEnter
+          OnExit = edtCodBarraExit
+          OnChange = edtCodBarraChange
+          ReadOnly = True
         end
         object RaLabel6: TRaLabel
           Left = 16
@@ -86,7 +90,7 @@ inherited frmControlePostagem: TfrmControlePostagem
           UI = 'cupertino'
           ReadOnly = True
         end
-        object RaEdit4: TRaEdit
+        object edtRgLidos: TRaEdit
           Left = 168
           Height = 21
           Top = 160
@@ -166,25 +170,25 @@ inherited frmControlePostagem: TfrmControlePostagem
           Caption = 'Registros lidos'
         end
         object RaPanel4: TRaPanel
-          Left = 576
+          Left = 536
           Height = 285
           Top = 0
-          Width = 193
+          Width = 233
           Align = alRight
           Anchors = [akTop, akLeft, akRight, akBottom]
           BevelInner = bvLowered
-          ClientWidth = 193
+          ClientWidth = 233
           ClientHeight = 285
           TabOrder = 0
-          object RaLabel5: TRaLabel
-            Left = 26
+          object lbLidos: TRaLabel
+            Left = 11
             Height = 113
             Top = 72
-            Width = 144
+            Width = 211
             Font.Height = -107
             ParentColor = False
             ParentFont = False
-            Caption = 'XX'
+            Caption = 'XXX'
           end
         end
       end

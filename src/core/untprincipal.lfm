@@ -5,8 +5,8 @@ object frmPrincipal: TfrmPrincipal
   Width = 1366
   BorderStyle = bsNone
   Caption = 'frmPrincipal'
-  ClientHeight = 705
-  ClientWidth = 1366
+  ClientHeight = 0
+  ClientWidth = 0
   Color = 15658734
   FormStyle = fsMDIForm
   OnActivate = FormActivate
@@ -86,9 +86,9 @@ object frmPrincipal: TfrmPrincipal
     end
     object RaLabel1: TRaLabel
       Left = 16
-      Height = 30
-      Top = 272
-      Width = 152
+      Height = 24
+      Top = 480
+      Width = 160
       ParentColor = False
       Caption = '<input type="date" id="birthday" name="birthday">'
     end

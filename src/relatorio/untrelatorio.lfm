@@ -8,8 +8,8 @@ object frmRelatorio: TfrmRelatorio
   ClientWidth = 1044
   OnResize = FrameResize
   TabOrder = 0
-  DesignLeft = 1467
-  DesignTop = 271
+  DesignLeft = 153
+  DesignTop = 80
   object pnlTopo: TRaPanel
     Left = 0
     Height = 29

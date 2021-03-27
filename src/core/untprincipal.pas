@@ -1,5 +1,5 @@
 unit untprincipal;
-
+//
 interface
 
 {$DEFINE RAUDUS}
@@ -135,8 +135,6 @@ begin
   FConfig.LoadSetting(Self);
   FConfig.Free;
   Arq.Free;
-
-
 end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);

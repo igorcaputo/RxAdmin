@@ -1,5 +1,5 @@
 unit untPreview;
-
+//
 {$mode objfpc}{$H+}
 
 interface
@@ -31,8 +31,9 @@ implementation
 
 procedure TfrmPreview.FormActivate(Sender: TObject);
 begin
-  RxPublisherView1.publisher := RaStreamPublisher1;
-  frmPreview.Caption := UTF8Decode('Visualização');
+  // ja foi definido no codigo
+  //RxPublisherView1.publisher := RaStreamPublisher1;
+  //frmPreview.Caption := UTF8Decode('Visualização');
 end;
 
 procedure TfrmPreview.FormClose(Sender: TObject; var CloseAction: TCloseAction);

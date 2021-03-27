@@ -180,6 +180,7 @@
         <Filename Value="src\processo\untcontrolepostagem.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmControlePostagem"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="untControlePostagem"/>
       </Unit21>
